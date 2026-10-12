@@ -196,13 +196,14 @@ const SECTIONS = [['explore', 'HISTORY'], ['sales', 'SALES'], ['lettings', 'LETT
 const EXPLORE_NAV = [['explore', '', 'Overview'], ['history', 'history/', 'The story'], ['blocks', 'blocks/', 'The estate'], ['inside', 'inside/', 'Inside the flats'], ['life', 'life/', 'Life here'], ['watch', 'watch/', 'Watch']];
 // Absolute base for share-card URLs (Telegram and others need a full URL).
 const SITE = 'https://barbican.estate/';
+const DESCRIPTION = 'The Barbican Estate in the City of London: its history, its blocks and flat types, and every flat for sale or to let.';
 
 export function renderArchive({ flats, building, split, price, live, isBarbican }) {
   const listings = flats.filter(isBarbican);
   const inBlock = (name) => listings.filter((d) => building(d) === name);
   const credits = new Map(); // every Commons photo shown, for the credits page
 
-  const page = ({ title, depth, active, section, body, head = '', sidebar = true, hero = '', image = '', share = null, editorial = '', route = null }) => {
+  const page = ({ title, depth, active, section, body, head = '', sidebar = true, hero = '', image = '', share = null, editorial = '', route = null, description = '' }) => {
     const root = '../'.repeat(depth);
     const link = (name) => `<li><a href="${root}blocks/${slug(name)}/"${active === name ? ' class="active"' : ''}>${up(name)}</a></li>`;
     return `<!doctype html><html lang="en"><head><meta charset="UTF-8">
@@ -210,6 +211,7 @@ export function renderArchive({ flats, building, split, price, live, isBarbican 
 <meta name="theme-color" content="#ffffff">
 <title>${esc(title)}</title>
 ${route !== null ? `<link rel="canonical" href="${SITE}${route ? route + '/' : ''}">` : ''}
+<meta name="description" content="${esc(description || DESCRIPTION)}">
 <meta property="og:title" content="${esc(share?.title || 'BARBICAN ESTATE')}">
 <meta property="og:description" content="${esc(share?.description || 'HISTORY / SALES / LETTINGS')}">
 <meta property="og:type" content="website">
@@ -302,7 +304,8 @@ ${editorialPages.blockExtras(name)}
   <a class="btn" href="../../lettings/?block=${encodeURIComponent(name)}">TO LET IN ${up(name)}</a>
   <a class="btn" href="../../sales/?block=${encodeURIComponent(name)}">FOR SALE IN ${up(name)}</a>
 </div>`;
-    return page({ title: `${name} — Barbican Estate`, depth: 2, active: name, section: 'blocks', body, hero: heroImg(r.photos?.[0], '') });
+    return page({ title: `${name} — Barbican Estate`, depth: 2, active: name, section: 'blocks', body, hero: heroImg(r.photos?.[0], ''), route: `blocks/${slug(name)}`,
+      description: c.lede ? `${name}, Barbican Estate. ${c.lede}` : `${name} on the Barbican Estate: history, flat types and flats for sale or to let.` });
   }
 
   function card(d, market = false) {
@@ -417,7 +420,8 @@ document.getElementById('more').onclick = () => { S.st = 'all'; render(); docume
 document.querySelectorAll('.grp').forEach((g) => (g.onclick = (e) => { const v = e.target.dataset.v; if (v) { S[g.dataset.k] = v; render(); } }));
 render();
 </script>`;
-    return page({ title: `Barbican Estate — ${rent ? 'to let' : 'for sale'}`, depth: 1, section: channel, body, head, sidebar: false });
+    return page({ title: `Barbican Estate flats ${rent ? 'to let' : 'for sale'}`, depth: 1, section: channel, body, head, sidebar: false, route: channel,
+      description: `Every Barbican Estate flat ${rent ? 'to let' : 'for sale'} from the estate's specialist agents, with a map of the blocks.` });
   }
 
   function flatPage(d) {
@@ -468,7 +472,8 @@ lb.onclick = (e) => { if (e.target === lb) hide(); };
 addEventListener('keydown', (e) => { if (!lb.classList.contains('on')) return; if (e.key === 'Escape') hide(); if (e.key === 'ArrowLeft') show(i - 1); if (e.key === 'ArrowRight') show(i + 1); });
 </script>`;
     const hero = photos[0] ? `<img src="${esc(photos[0])}" data-i="0" alt="${esc(name)}" style="cursor:zoom-in">` : '';
-    return page({ title: `${name} — ${p.main}${p.unit ? ' ' + p.unit : ''} — Barbican Estate`, depth: 1, section: channel(d), body, sidebar: false, hero,
+    return page({ title: `${name} — ${p.main}${p.unit ? ' ' + p.unit : ''} — Barbican Estate`, depth: 1, section: channel(d), body, sidebar: false, hero, route: String(d.property_id),
+      description: `${Number(d.bedrooms) === 0 ? 'Studio' : d.bedrooms + '-bedroom'} flat ${rent ? 'to let' : 'for sale'} in ${name}, Barbican Estate. ${p.main}${p.unit ? ' ' + p.unit : ''}. ${d.status}.`,
       image: photos[0], share: { title: `${name.toUpperCase()} — ${p.main}${p.unit ? ' ' + p.unit.toUpperCase() : ''}`, description: `${Number(d.bedrooms) === 0 ? 'STUDIO' : d.bedrooms + ' BED'} ${rent ? 'TO LET' : 'FOR SALE'} // BARBICAN ESTATE` } });
   }
   const channel = (d) => (d.channel === 'sales' ? 'sales' : 'lettings');
@@ -477,7 +482,7 @@ addEventListener('keydown', (e) => { if (!lb.classList.contains('on')) return; i
     const body = `<span class="section-title">Photo credits</span>
 ${rows([...credits.values()].map((c) => [c.caption || 'Photo', `${c.author}, ${c.licence}. ${c.page}`]))}
 <p style="color:var(--faded-ink)">Photos of flats come from the agents' listings. Map data © OpenStreetMap contributors.</p>`;
-    return page({ title: 'Photo credits — Barbican Estate', depth: 1, section: '', body, sidebar: false });
+    return page({ title: 'Photo credits — Barbican Estate', depth: 1, section: '', body, sidebar: false, route: 'credits' });
   }
 
   const editorialPages = createEditorial({ page, R, HISTORY, BLOCKS, ESTATE, ALL, commons, listings, building, live, card, chart });

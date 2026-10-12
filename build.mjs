@@ -78,3 +78,19 @@ writeFileSync('site/barbican/index.html', oldMapPage());
 copyFileSync('assets/og.png', 'site/og.png');
 const archivePages = renderArchive({ flats, building, split, price, live, isBarbican });
 console.log(`built ${flats.length} flat(s) and ${archivePages} archive page(s) into site/`);
+
+// Search: a sitemap of every page with a canonical URL, and robots.txt pointing to it.
+const canonicals = [];
+(function walk(dir) {
+  for (const e of readdirSync(dir, { withFileTypes: true })) {
+    if (e.isDirectory()) walk(`${dir}/${e.name}`);
+    else if (e.name === 'index.html') {
+      const m = readFileSync(`${dir}/${e.name}`, 'utf8').match(/<link rel="canonical" href="([^"]+)">/);
+      if (m) canonicals.push(m[1]);
+    }
+  }
+})('site');
+canonicals.sort();
+writeFileSync('site/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${canonicals.map((u) => `  <url><loc>${u}</loc></url>`).join('\n')}\n</urlset>\n`);
+writeFileSync('site/robots.txt', 'User-agent: *\nAllow: /\n\nSitemap: https://barbican.estate/sitemap.xml\n');
+console.log(`sitemap: ${canonicals.length} URLs`);
