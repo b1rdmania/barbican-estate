@@ -27,11 +27,11 @@ You need Node and Google Chrome.
 
 ```sh
 npm install
-./flat barbican     # fetch all four agencies, build site/, publish
+./flat barbican     # fetch all four agencies, build site/, deploy
 node build.mjs      # build site/ from data/ only
 ```
 
-`./flat` publishes with here.now. To build without publishing, use `node build.mjs` and open `site/index.html`.
+`./flat` deploys to a Cloudflare Worker with `npx wrangler deploy` (config in `wrangler.jsonc`). To build without deploying, use `node build.mjs` and open `site/index.html`.
 
 ## Files
 

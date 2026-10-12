@@ -7,8 +7,8 @@ Three sections: Lettings, Sales, History. Root redirects to Lettings.
 
 ```sh
 cd ~/Documents/flatview
-./flat barbican          # fetch every agency's Barbican listings, rebuild, republish
-./flat 22184890          # fetch one listing by ID or URL, rebuild, republish
+./flat barbican          # fetch every agency's Barbican listings, rebuild, deploy to Cloudflare
+./flat 22184890          # fetch one listing by ID or URL, rebuild, deploy to Cloudflare
 node build.mjs           # rebuild site/ from data/ only (no fetch)
 node ios-check.mjs https://barbican.estate/ <out-dir>   # WebKit iPhone 15 check
 ```
