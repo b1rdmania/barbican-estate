@@ -4,9 +4,15 @@
 # Agencies: Frank Harris (fetch.mjs), Nicola Lee, Thomas Michael, Base (fetchers/).
 set -e
 cd "$(dirname "$0")"
+START=$(date -u +%Y-%m-%dT%H:%M:%S.000Z)
 node fetch.mjs "$@"
 if [ "$1" = barbican ]; then
-  for f in fetchers/*.mjs; do node "$f" || echo "warning: $f failed, keeping its old data"; done
+  node reconcile.mjs frankharris "$START"
+  for f in fetchers/*.mjs; do
+    START=$(date -u +%Y-%m-%dT%H:%M:%S.000Z)
+    if node "$f"; then node reconcile.mjs "$(basename "$f" .mjs)" "$START"
+    else echo "warning: $f failed, keeping its old data"; fi
+  done
 fi
 node build.mjs
 GODEBUG=netdns=go npx wrangler deploy   # Cloudflare Worker barbican-estate -> https://barbican.estate/

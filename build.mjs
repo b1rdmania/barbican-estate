@@ -1,6 +1,6 @@
 // Render data/*.json into site/: listings, flat pages and the history archive (archive.mjs).
 // Usage: node build.mjs
-import { readdirSync, readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSync } from 'node:fs';
 import { renderArchive } from './archive.mjs';
 
 
@@ -10,6 +10,7 @@ const tidy = (html) => String(html || '')
   .replace(/<(script|style|iframe|object|template)\b[\s\S]*?<\/\1\s*>/gi, '')
   .replace(/<!--[\s\S]*?-->/g, '')
   .replace(/<\/?([a-z][a-z0-9]*)\b[^>]*>/gi, (tag, name) => (TAGS.has(name.toLowerCase()) ? (tag[1] === '/' ? `</${name.toLowerCase()}>` : `<${name.toLowerCase()}>`) : ''));
+const LIVE = /^(to let|for sale|available)$/i;
 const webUrl = (u) => (/^(https?:)?\/\//i.test(String(u || '')) ? String(u) : '');
 function clean(d) {
   return {
@@ -19,12 +20,16 @@ function clean(d) {
     photos: (d.photos || []).map(webUrl).filter(Boolean),
     floorplans: (d.floorplans || []).map(webUrl).filter(Boolean),
     features: (d.features || []).map(String),
+    // Gone from the agency site on two complete fetches in a row (see reconcile.mjs).
+    status: (d.missed || 0) >= 2 && LIVE.test(d.status) ? 'No longer listed' : d.status,
   };
 }
 
+// data/seen.json (written by reconcile.mjs): per listing file, first_seen, last_seen, missed.
+const SEEN = existsSync('data/seen.json') ? JSON.parse(readFileSync('data/seen.json', 'utf8')) : {};
 const flats = readdirSync('data')
   .filter((f) => /^(\d+|[a-z]+-[\w-]+)\.json$/.test(f))
-  .map((f) => JSON.parse(readFileSync(`data/${f}`, 'utf8')))
+  .map((f) => ({ ...JSON.parse(readFileSync(`data/${f}`, 'utf8')), ...SEEN[f] }))
   .map(clean)
   .sort((a, b) => b.fetched_at.localeCompare(a.fetched_at));
 
@@ -57,7 +62,8 @@ function building(d) {
     parts.find((x) => /house|tower|court|building|mansions|lodge|crescent/i.test(x)) ||
     (d.road_name !== 'Barbican' && d.road_name) || 'Barbican';
 }
-const live = (d) => !/let agreed|^let$|sold|under offer/i.test(d.status);
+// Live = an explicit on-the-market status. Anything else (let, sold, unknown) is not shown as available.
+const live = (d) => LIVE.test(d.status);
 const isBarbican = (d) => /^EC2Y 8/i.test(d.postcode || '') || /barbican/i.test(d.display_address);
 
 // The old map URL now lives on as the lettings page.
