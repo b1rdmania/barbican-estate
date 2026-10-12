@@ -1,0 +1,59 @@
+{
+  "id": 21861867,
+  "photo": "//mr3.homeflow-assets.co.uk/files/photo/image/47663/3932/670x/b5c1bcab58efd7e56a46c67abe01bb74d928ae67.jpg",
+  "photos": [
+    "//mr3.homeflow-assets.co.uk/files/photo/image/47663/3932/540x450/b5c1bcab58efd7e56a46c67abe01bb74d928ae67.jpg"
+  ],
+  "photos2x": [
+    "//mr3.homeflow-assets.co.uk/files/photo/image/47663/3932/1080x900/b5c1bcab58efd7e56a46c67abe01bb74d928ae67.jpg"
+  ],
+  "small_photo": "//mr3.homeflow-assets.co.uk/files/photo/image/47663/3932/100x/b5c1bcab58efd7e56a46c67abe01bb74d928ae67.jpg",
+  "property_url": "/properties/21861867/sales",
+  "short_description": "A rarely available penthouse (type 35) with a large reception and dining room, three double bedrooms, a galley kitchen, two bathrooms each with a shower, and an exceptionally large terrace with views over the barbican gardens, st. giles church and the city skyline. on entering the property, you are greeted with a double height reception room and a wall of windows facing east. the flat benefits from the morning sun. the lease has been extended.",
+  "description": "A rarely available penthouse (Type 35) with a large reception and dining room, three double bedrooms, a galley kitchen, two bathrooms each with a shower, and an exceptionally large terrace with views over the Barbican gardens, St. Giles Church and the City skyline. On entering...",
+  "display_address": "Barbican, Seddon House, Barbican",
+  "area_code": "EC2Y",
+  "postcode": "EC2Y 8BX",
+  "road_name": "Barbican",
+  "locality": "Seddon House, Barbican",
+  "price": "£2,200,000",
+  "price_value": "£2,200,000",
+  "price_pw_value": "£507,692",
+  "price_without_qualifier": 2200000,
+  "price_qualifier": "",
+  "status": "Sold",
+  "show_status": true,
+  "unavailable_class": "unavailable",
+  "bedrooms": "3",
+  "bathrooms": "2",
+  "reception_rooms": "1",
+  "tags": "gardenterracepenthouseterracedgreat viewsflats and apartmentsinternational no ntsflatapartmentall residentialflats or apartmentsresidentialflats apartmentsresidential moore allength residentialresidential northumberlandrendells residentialapartmentsrickman local propertiesct residentialsandc residentialshouler residential",
+  "lat": 51.519121,
+  "town": "London",
+  "lng": -0.096816,
+  "tenure": "Leasehold",
+  "unavailable": "true",
+  "property_id": 21861867,
+  "agency_name": "Frank Harris & Co.",
+  "vox_number": "",
+  "property_channel": "sales",
+  "contact_telephone": "020 7600 7000",
+  "features": [
+    "Three Bedroom Flat",
+    "Type 35 Penthouse",
+    "Original Features",
+    "Large Terrace",
+    "Extended Lease",
+    "No Onward Chain"
+  ],
+  "feature_icons_in_property_cards": false,
+  "display_zero_bedrooms_in_property_cards": false,
+  "channel": "sales",
+  "source_url": "https://www.frankharris.co.uk/properties/21861867/sales",
+  "description_html": "<p>A rarely available penthouse (Type 35) with a large reception and dining room, three double bedrooms, a galley kitchen, two bathrooms each with a shower, and an exceptionally large terrace with views over the Barbican gardens, St. Giles Church and the City skyline. On entering the property, you are greeted with a double height reception room and a wall of windows facing east. The flat benefits from the morning sun. The lease has been extended.</p><p>Close to both St.Paul's and Farringdon stations with access to the Central Line, Elizabeth line, Circle and Hammersmith and City.<br><br><b>Tenure:</b> Leasehold <br><b>Council Tax Band:</b> G</p>",
+  "floorplans": [
+    "https://mr2.homeflow-assets.co.uk/files/floorplan/image/7022/5742/_x_/41f08a418fb0be675e679db601b92fb0d2003813.jpg"
+  ],
+  "epcs": [],
+  "fetched_at": "2026-10-10T14:22:01.347Z"
+}

@@ -1,0 +1,2129 @@
+[
+ {
+  "block": "Andrewes House",
+  "pct": 0.6,
+  "label": "Type A",
+  "total_2025_26": 2860,
+  "flats_note": null,
+  "types": [
+   "A"
+  ]
+ },
+ {
+  "block": "Andrewes House",
+  "pct": 0.46,
+  "label": "Type 16",
+  "total_2025_26": 4848,
+  "flats_note": null,
+  "types": [
+   "16"
+  ]
+ },
+ {
+  "block": "Andrewes House",
+  "pct": 0.63,
+  "label": "Type 19",
+  "total_2025_26": 6639,
+  "flats_note": null,
+  "types": [
+   "19"
+  ]
+ },
+ {
+  "block": "Andrewes House",
+  "pct": 0.53,
+  "label": "Type 20",
+  "total_2025_26": 5585,
+  "flats_note": null,
+  "types": [
+   "20"
+  ]
+ },
+ {
+  "block": "Andrewes House",
+  "pct": 0.54,
+  "label": "Type 21 & 80",
+  "total_2025_26": 5691,
+  "flats_note": null,
+  "types": [
+   "21",
+   "80"
+  ]
+ },
+ {
+  "block": "Andrewes House",
+  "pct": 0.49,
+  "label": "Type 22, 23 & 60",
+  "total_2025_26": 5164,
+  "flats_note": null,
+  "types": [
+   "22",
+   "23",
+   "60"
+  ]
+ },
+ {
+  "block": "Andrewes House",
+  "pct": 0.5,
+  "label": "Type 57",
+  "total_2025_26": 5269,
+  "flats_note": null,
+  "types": [
+   "57"
+  ]
+ },
+ {
+  "block": "Andrewes House",
+  "pct": 0.515,
+  "label": "Type 58",
+  "total_2025_26": 5427,
+  "flats_note": null,
+  "types": [
+   "58"
+  ]
+ },
+ {
+  "block": "Andrewes House",
+  "pct": 0.51,
+  "label": "Type 76",
+  "total_2025_26": 5375,
+  "flats_note": null,
+  "types": [
+   "76"
+  ]
+ },
+ {
+  "block": "Andrewes House",
+  "pct": 0.35,
+  "label": "Type78",
+  "total_2025_26": 3688,
+  "flats_note": null,
+  "types": [
+   "78"
+  ]
+ },
+ {
+  "block": "Andrewes House",
+  "pct": 0.525,
+  "label": "Type 79",
+  "total_2025_26": 5533,
+  "flats_note": null,
+  "types": [
+   "79"
+  ]
+ },
+ {
+  "block": "Ben Jonson House",
+  "pct": 0.39,
+  "label": "Type F2C",
+  "total_2025_26": 4637,
+  "flats_note": null,
+  "types": [
+   "F2C"
+  ]
+ },
+ {
+  "block": "Ben Jonson House",
+  "pct": 0.485,
+  "label": "Type M2A",
+  "total_2025_26": 5766,
+  "flats_note": null,
+  "types": [
+   "M2A"
+  ]
+ },
+ {
+  "block": "Ben Jonson House",
+  "pct": 0.47,
+  "label": "Type M2B",
+  "total_2025_26": 5588,
+  "flats_note": null,
+  "types": [
+   "M2B"
+  ]
+ },
+ {
+  "block": "Ben Jonson House",
+  "pct": 0.51,
+  "label": "Type M2C",
+  "total_2025_26": 6063,
+  "flats_note": null,
+  "types": [
+   "M2C"
+  ]
+ },
+ {
+  "block": "Ben Jonson House",
+  "pct": 0.63,
+  "label": "Type M3A",
+  "total_2025_26": 7490,
+  "flats_note": null,
+  "types": [
+   "M3A"
+  ]
+ },
+ {
+  "block": "Ben Jonson House",
+  "pct": 0.66,
+  "label": "Type M3B",
+  "total_2025_26": 7847,
+  "flats_note": null,
+  "types": [
+   "M3B"
+  ]
+ },
+ {
+  "block": "Ben Jonson House",
+  "pct": 0.78,
+  "label": "Type M3C",
+  "total_2025_26": 9273,
+  "flats_note": null,
+  "types": [
+   "M3C"
+  ]
+ },
+ {
+  "block": "Ben Jonson House",
+  "pct": 0.55,
+  "label": "Type M3D",
+  "total_2025_26": 6539,
+  "flats_note": null,
+  "types": [
+   "M3D"
+  ]
+ },
+ {
+  "block": "Ben Jonson House",
+  "pct": 0.56,
+  "label": "Type M3E",
+  "total_2025_26": 6658,
+  "flats_note": null,
+  "types": [
+   "M3E"
+  ]
+ },
+ {
+  "block": "Ben Jonson House",
+  "pct": 0.72,
+  "label": "Type M4A",
+  "total_2025_26": 8560,
+  "flats_note": null,
+  "types": [
+   "M4A"
+  ]
+ },
+ {
+  "block": "Brandon Mews",
+  "pct": 3.76219,
+  "label": "Type 118",
+  "total_2025_26": 5357,
+  "flats_note": null,
+  "types": [
+   "118"
+  ]
+ },
+ {
+  "block": "Brandon Mews",
+  "pct": 4.09386,
+  "label": "type 118 (3, 7 & 23)",
+  "total_2025_26": 5829,
+  "flats_note": "3, 7 & 23",
+  "types": [
+   "118"
+  ]
+ },
+ {
+  "block": "Brandon Mews",
+  "pct": 3.52458,
+  "label": "type 119",
+  "total_2025_26": 5019,
+  "flats_note": null,
+  "types": [
+   "119"
+  ]
+ },
+ {
+  "block": "Brandon Mews",
+  "pct": 4.08891,
+  "label": "type 120",
+  "total_2025_26": 5822,
+  "flats_note": null,
+  "types": [
+   "120"
+  ]
+ },
+ {
+  "block": "Brandon Mews",
+  "pct": 3.81664,
+  "label": "type 121",
+  "total_2025_26": 5435,
+  "flats_note": null,
+  "types": [
+   "121"
+  ]
+ },
+ {
+  "block": "Breton House",
+  "pct": 0.7212,
+  "label": "Type F1A (2)",
+  "total_2025_26": 3426,
+  "flats_note": "2",
+  "types": [
+   "F1A"
+  ]
+ },
+ {
+  "block": "Breton House",
+  "pct": 0.722,
+  "label": "Type F1A",
+  "total_2025_26": 3429,
+  "flats_note": null,
+  "types": [
+   "F1A"
+  ]
+ },
+ {
+  "block": "Breton House",
+  "pct": 0.885,
+  "label": "Type F2A",
+  "total_2025_26": 4204,
+  "flats_note": null,
+  "types": [
+   "F2A"
+  ]
+ },
+ {
+  "block": "Breton House",
+  "pct": 1.4804,
+  "label": "Type P2A",
+  "total_2025_26": 7032,
+  "flats_note": null,
+  "types": [
+   "P2A"
+  ]
+ },
+ {
+  "block": "Bryer Court",
+  "pct": 1.77,
+  "label": "Type F1D",
+  "total_2025_26": 4790,
+  "flats_note": null,
+  "types": [
+   "F1D"
+  ]
+ },
+ {
+  "block": "Bryer Court",
+  "pct": 1.73,
+  "label": "Type F1E",
+  "total_2025_26": 4681,
+  "flats_note": null,
+  "types": [
+   "F1E"
+  ]
+ },
+ {
+  "block": "Bryer Court",
+  "pct": 1.92,
+  "label": "Type P1D",
+  "total_2025_26": 5195,
+  "flats_note": null,
+  "types": [
+   "P1D"
+  ]
+ },
+ {
+  "block": "Bunyan Court",
+  "pct": 1.135,
+  "label": "Type F2C",
+  "total_2025_26": 4319,
+  "flats_note": null,
+  "types": [
+   "F2C"
+  ]
+ },
+ {
+  "block": "Bunyan Court",
+  "pct": 1.35,
+  "label": "Type F3C",
+  "total_2025_26": 5137,
+  "flats_note": null,
+  "types": [
+   "F3C"
+  ]
+ },
+ {
+  "block": "Bunyan Court",
+  "pct": 1.41,
+  "label": "Type M2A",
+  "total_2025_26": 5366,
+  "flats_note": null,
+  "types": [
+   "M2A"
+  ]
+ },
+ {
+  "block": "Bunyan Court",
+  "pct": 1.38,
+  "label": "Type M2B",
+  "total_2025_26": 5251,
+  "flats_note": null,
+  "types": [
+   "M2B"
+  ]
+ },
+ {
+  "block": "Bunyan Court",
+  "pct": 1.85,
+  "label": "Type M3A",
+  "total_2025_26": 7040,
+  "flats_note": null,
+  "types": [
+   "M3A"
+  ]
+ },
+ {
+  "block": "Bunyan Court",
+  "pct": 1.93,
+  "label": "Type M3B",
+  "total_2025_26": 7344,
+  "flats_note": null,
+  "types": [
+   "M3B"
+  ]
+ },
+ {
+  "block": "Bunyan Court",
+  "pct": 1.58,
+  "label": "Type M3D",
+  "total_2025_26": 6012,
+  "flats_note": null,
+  "types": [
+   "M3D"
+  ]
+ },
+ {
+  "block": "Bunyan Court",
+  "pct": 1.63,
+  "label": "Type M3E",
+  "total_2025_26": 6203,
+  "flats_note": null,
+  "types": [
+   "M3E"
+  ]
+ },
+ {
+  "block": "Bunyan Court",
+  "pct": 2.1,
+  "label": "Type M4A",
+  "total_2025_26": 7991,
+  "flats_note": null,
+  "types": [
+   "M4A"
+  ]
+ },
+ {
+  "block": "Cromwell Tower",
+  "pct": 0.87,
+  "label": "",
+  "total_2025_26": 10110,
+  "flats_note": null,
+  "types": []
+ },
+ {
+  "block": "Cromwell Tower",
+  "pct": 1.86,
+  "label": "Type 4A",
+  "total_2025_26": 21616,
+  "flats_note": null,
+  "types": [
+   "4A"
+  ]
+ },
+ {
+  "block": "Cromwell Tower",
+  "pct": 1.97,
+  "label": "Type 4B",
+  "total_2025_26": 22894,
+  "flats_note": null,
+  "types": [
+   "4B"
+  ]
+ },
+ {
+  "block": "Cromwell Tower",
+  "pct": 2.21,
+  "label": "Type 4C",
+  "total_2025_26": 25683,
+  "flats_note": null,
+  "types": [
+   "4C"
+  ]
+ },
+ {
+  "block": "Defoe House",
+  "pct": 0.55,
+  "label": "Type 20 & 21",
+  "total_2025_26": 5798,
+  "flats_note": null,
+  "types": [
+   "20",
+   "21"
+  ]
+ },
+ {
+  "block": "Defoe House",
+  "pct": 0.5,
+  "label": "Type 23 & 60",
+  "total_2025_26": 5271,
+  "flats_note": null,
+  "types": [
+   "23",
+   "60"
+  ]
+ },
+ {
+  "block": "Defoe House",
+  "pct": 0.455,
+  "label": "Type 49 & 50",
+  "total_2025_26": 4797,
+  "flats_note": null,
+  "types": [
+   "49",
+   "50"
+  ]
+ },
+ {
+  "block": "Defoe House",
+  "pct": 0.7,
+  "label": "Type 51 & 61",
+  "total_2025_26": 7380,
+  "flats_note": null,
+  "types": [
+   "51",
+   "61"
+  ]
+ },
+ {
+  "block": "Defoe House",
+  "pct": 0.455,
+  "label": "Type 52 & 53",
+  "total_2025_26": 4797,
+  "flats_note": null,
+  "types": [
+   "52",
+   "53"
+  ]
+ },
+ {
+  "block": "Defoe House",
+  "pct": 0.84,
+  "label": "Type 54",
+  "total_2025_26": 8856,
+  "flats_note": null,
+  "types": [
+   "54"
+  ]
+ },
+ {
+  "block": "Defoe House",
+  "pct": 0.86,
+  "label": "Type 56",
+  "total_2025_26": 9067,
+  "flats_note": null,
+  "types": [
+   "56"
+  ]
+ },
+ {
+  "block": "Defoe House",
+  "pct": 0.51,
+  "label": "Type 57",
+  "total_2025_26": 5377,
+  "flats_note": null,
+  "types": [
+   "57"
+  ]
+ },
+ {
+  "block": "Defoe House",
+  "pct": 0.53,
+  "label": "Type 58",
+  "total_2025_26": 5588,
+  "flats_note": null,
+  "types": [
+   "58"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 2.9526,
+  "label": "Type 701",
+  "total_2025_26": 7463,
+  "flats_note": null,
+  "types": [
+   "701"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.9613,
+  "label": "Type 702",
+  "total_2025_26": 2430,
+  "flats_note": null,
+  "types": [
+   "702"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.03,
+  "label": "Type 703",
+  "total_2025_26": 2603,
+  "flats_note": null,
+  "types": [
+   "703"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1215,
+  "label": "Type 704",
+  "total_2025_26": 2835,
+  "flats_note": null,
+  "types": [
+   "704"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.2818,
+  "label": "Type 705",
+  "total_2025_26": 3240,
+  "flats_note": null,
+  "types": [
+   "705"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.0071,
+  "label": "Type 706",
+  "total_2025_26": 2546,
+  "flats_note": null,
+  "types": [
+   "706"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8011,
+  "label": "Type 707",
+  "total_2025_26": 2025,
+  "flats_note": null,
+  "types": [
+   "707"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.6251,
+  "label": "Type 708",
+  "total_2025_26": 4108,
+  "flats_note": null,
+  "types": [
+   "708"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.6022,
+  "label": "Type 709",
+  "total_2025_26": 4050,
+  "flats_note": null,
+  "types": [
+   "709"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.6022,
+  "label": "Type 710",
+  "total_2025_26": 4050,
+  "flats_note": null,
+  "types": [
+   "710"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8011,
+  "label": "Type 711",
+  "total_2025_26": 2025,
+  "flats_note": null,
+  "types": [
+   "711"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 2.3575,
+  "label": "Type 712",
+  "total_2025_26": 5959,
+  "flats_note": null,
+  "types": [
+   "712"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 2.4262,
+  "label": "Type 713",
+  "total_2025_26": 6133,
+  "flats_note": null,
+  "types": [
+   "713"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8011,
+  "label": "Type 714",
+  "total_2025_26": 2025,
+  "flats_note": null,
+  "types": [
+   "714"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.6022,
+  "label": "Type 715",
+  "total_2025_26": 4050,
+  "flats_note": null,
+  "types": [
+   "715"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.648,
+  "label": "Type 716",
+  "total_2025_26": 4166,
+  "flats_note": null,
+  "types": [
+   "716"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.648,
+  "label": "Type 717",
+  "total_2025_26": 4166,
+  "flats_note": null,
+  "types": [
+   "717"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.6022,
+  "label": "Type 718",
+  "total_2025_26": 4050,
+  "flats_note": null,
+  "types": [
+   "718"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 2.3804,
+  "label": "Type 719",
+  "total_2025_26": 6017,
+  "flats_note": null,
+  "types": [
+   "719"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 3.0899,
+  "label": "Type 801",
+  "total_2025_26": 7810,
+  "flats_note": null,
+  "types": [
+   "801"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.9842,
+  "label": "Type 802",
+  "total_2025_26": 2488,
+  "flats_note": null,
+  "types": [
+   "802"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.0758,
+  "label": "Type 803",
+  "total_2025_26": 2719,
+  "flats_note": null,
+  "types": [
+   "803"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1673,
+  "label": "Type 804",
+  "total_2025_26": 2951,
+  "flats_note": null,
+  "types": [
+   "804"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.2818,
+  "label": "Type 805",
+  "total_2025_26": 3240,
+  "flats_note": null,
+  "types": [
+   "805"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.0071,
+  "label": "Type 806",
+  "total_2025_26": 2546,
+  "flats_note": null,
+  "types": [
+   "806"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8469,
+  "label": "Type 807",
+  "total_2025_26": 2141,
+  "flats_note": null,
+  "types": [
+   "807"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8469,
+  "label": "Type 808",
+  "total_2025_26": 2141,
+  "flats_note": null,
+  "types": [
+   "808"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8469,
+  "label": "Type 809",
+  "total_2025_26": 2141,
+  "flats_note": null,
+  "types": [
+   "809"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8469,
+  "label": "Type 810",
+  "total_2025_26": 2141,
+  "flats_note": null,
+  "types": [
+   "810"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8469,
+  "label": "Type 811",
+  "total_2025_26": 2141,
+  "flats_note": null,
+  "types": [
+   "811"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8469,
+  "label": "Type 812",
+  "total_2025_26": 2141,
+  "flats_note": null,
+  "types": [
+   "812"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.7624,
+  "label": "Type 813",
+  "total_2025_26": 4455,
+  "flats_note": null,
+  "types": [
+   "813"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 2.5177,
+  "label": "Type 814",
+  "total_2025_26": 6364,
+  "flats_note": null,
+  "types": [
+   "814"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 2.5635,
+  "label": "Type 815",
+  "total_2025_26": 6480,
+  "flats_note": null,
+  "types": [
+   "815"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.7395,
+  "label": "Type 816",
+  "total_2025_26": 4397,
+  "flats_note": null,
+  "types": [
+   "816"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8469,
+  "label": "Type 817",
+  "total_2025_26": 2141,
+  "flats_note": null,
+  "types": [
+   "817"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8469,
+  "label": "Type 818",
+  "total_2025_26": 2141,
+  "flats_note": null,
+  "types": [
+   "818"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8469,
+  "label": "Type 819",
+  "total_2025_26": 2141,
+  "flats_note": null,
+  "types": [
+   "819"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8469,
+  "label": "Type 820",
+  "total_2025_26": 2141,
+  "flats_note": null,
+  "types": [
+   "820"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8469,
+  "label": "Type 821",
+  "total_2025_26": 2141,
+  "flats_note": null,
+  "types": [
+   "821"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8469,
+  "label": "Type 822",
+  "total_2025_26": 2141,
+  "flats_note": null,
+  "types": [
+   "822"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 0.8469,
+  "label": "Type 823",
+  "total_2025_26": 2141,
+  "flats_note": null,
+  "types": [
+   "823"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 2.4948,
+  "label": "Type 824",
+  "total_2025_26": 6306,
+  "flats_note": null,
+  "types": [
+   "824"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 3.5935,
+  "label": "Type 901",
+  "total_2025_26": 9083,
+  "flats_note": null,
+  "types": [
+   "901"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.4877,
+  "label": "Type 902",
+  "total_2025_26": 3760,
+  "flats_note": null,
+  "types": [
+   "902"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.5564,
+  "label": "Type 903",
+  "total_2025_26": 3934,
+  "flats_note": null,
+  "types": [
+   "903"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.6709,
+  "label": "Type 904",
+  "total_2025_26": 4223,
+  "flats_note": null,
+  "types": [
+   "904"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.8082,
+  "label": "Type 905",
+  "total_2025_26": 4570,
+  "flats_note": null,
+  "types": [
+   "905"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.4191,
+  "label": "Type 906",
+  "total_2025_26": 3587,
+  "flats_note": null,
+  "types": [
+   "906"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1902,
+  "label": "Type 907",
+  "total_2025_26": 3008,
+  "flats_note": null,
+  "types": [
+   "907"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1902,
+  "label": "Type 908",
+  "total_2025_26": 3008,
+  "flats_note": null,
+  "types": [
+   "908"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1673,
+  "label": "Type 909",
+  "total_2025_26": 2951,
+  "flats_note": null,
+  "types": [
+   "909"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1673,
+  "label": "Type 910",
+  "total_2025_26": 2951,
+  "flats_note": null,
+  "types": [
+   "910"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1673,
+  "label": "Type 911",
+  "total_2025_26": 2951,
+  "flats_note": null,
+  "types": [
+   "911"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1673,
+  "label": "Type 912",
+  "total_2025_26": 2951,
+  "flats_note": null,
+  "types": [
+   "912"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1673,
+  "label": "Type 913",
+  "total_2025_26": 2951,
+  "flats_note": null,
+  "types": [
+   "913"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1673,
+  "label": "Type 914",
+  "total_2025_26": 2951,
+  "flats_note": null,
+  "types": [
+   "914"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 2.7924,
+  "label": "Type 915",
+  "total_2025_26": 7058,
+  "flats_note": null,
+  "types": [
+   "915"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 2.8153,
+  "label": "Type 916",
+  "total_2025_26": 7116,
+  "flats_note": null,
+  "types": [
+   "916"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1673,
+  "label": "Type 917",
+  "total_2025_26": 2951,
+  "flats_note": null,
+  "types": [
+   "917"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1673,
+  "label": "Type 918",
+  "total_2025_26": 2951,
+  "flats_note": null,
+  "types": [
+   "918"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1673,
+  "label": "Type 919",
+  "total_2025_26": 2951,
+  "flats_note": null,
+  "types": [
+   "919"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1673,
+  "label": "Type 920",
+  "total_2025_26": 2951,
+  "flats_note": null,
+  "types": [
+   "920"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1902,
+  "label": "Type 921",
+  "total_2025_26": 3008,
+  "flats_note": null,
+  "types": [
+   "921"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1902,
+  "label": "Type 922",
+  "total_2025_26": 3008,
+  "flats_note": null,
+  "types": [
+   "922"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1673,
+  "label": "Type 923",
+  "total_2025_26": 2951,
+  "flats_note": null,
+  "types": [
+   "923"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1673,
+  "label": "Type 924",
+  "total_2025_26": 2951,
+  "flats_note": null,
+  "types": [
+   "924"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 1.1444,
+  "label": "Type 925",
+  "total_2025_26": 2893,
+  "flats_note": null,
+  "types": [
+   "925"
+  ]
+ },
+ {
+  "block": "Frobisher Crescent",
+  "pct": 2.9068,
+  "label": "Type 926",
+  "total_2025_26": 7347,
+  "flats_note": null,
+  "types": [
+   "926"
+  ]
+ },
+ {
+  "block": "Gilbert House",
+  "pct": 1.1,
+  "label": "Type 26",
+  "total_2025_26": 6690,
+  "flats_note": null,
+  "types": [
+   "26"
+  ]
+ },
+ {
+  "block": "Gilbert House",
+  "pct": 1.03,
+  "label": "Type 27",
+  "total_2025_26": 6280,
+  "flats_note": null,
+  "types": [
+   "27"
+  ]
+ },
+ {
+  "block": "Gilbert House",
+  "pct": 1.11,
+  "label": "Type 31",
+  "total_2025_26": 6748,
+  "flats_note": null,
+  "types": [
+   "31"
+  ]
+ },
+ {
+  "block": "Gilbert House",
+  "pct": 1.04,
+  "label": "Type 32",
+  "total_2025_26": 6339,
+  "flats_note": null,
+  "types": [
+   "32"
+  ]
+ },
+ {
+  "block": "Gilbert House",
+  "pct": 1.61,
+  "label": "Type 35",
+  "total_2025_26": 9676,
+  "flats_note": null,
+  "types": [
+   "35"
+  ]
+ },
+ {
+  "block": "Gilbert House",
+  "pct": 1.54,
+  "label": "Type 36",
+  "total_2025_26": 9266,
+  "flats_note": null,
+  "types": [
+   "36"
+  ]
+ },
+ {
+  "block": "Gilbert House",
+  "pct": 1.36,
+  "label": "Type 39",
+  "total_2025_26": 8212,
+  "flats_note": null,
+  "types": [
+   "39"
+  ]
+ },
+ {
+  "block": "Gilbert House",
+  "pct": 1.28,
+  "label": "Type 41",
+  "total_2025_26": 7744,
+  "flats_note": null,
+  "types": [
+   "41"
+  ]
+ },
+ {
+  "block": "Gilbert House",
+  "pct": 1.0,
+  "label": "Type 70",
+  "total_2025_26": 6104,
+  "flats_note": null,
+  "types": [
+   "70"
+  ]
+ },
+ {
+  "block": "Gilbert House",
+  "pct": 0.98,
+  "label": "Type 70 H & 74",
+  "total_2025_26": 5987,
+  "flats_note": null,
+  "types": [
+   "70 H",
+   "74"
+  ]
+ },
+ {
+  "block": "Gilbert House",
+  "pct": 0.92,
+  "label": "Type 71",
+  "total_2025_26": 5636,
+  "flats_note": null,
+  "types": [
+   "71"
+  ]
+ },
+ {
+  "block": "Gilbert House",
+  "pct": 0.93,
+  "label": "Type 72",
+  "total_2025_26": 5695,
+  "flats_note": null,
+  "types": [
+   "72"
+  ]
+ },
+ {
+  "block": "Gilbert House",
+  "pct": 0.7,
+  "label": "Type 73",
+  "total_2025_26": 4297,
+  "flats_note": null,
+  "types": [
+   "73"
+  ]
+ },
+ {
+  "block": "John Trundle Court",
+  "pct": 0.6,
+  "label": "Type F1A",
+  "total_2025_26": 3331,
+  "flats_note": null,
+  "types": [
+   "F1A"
+  ]
+ },
+ {
+  "block": "John Trundle Court",
+  "pct": 0.73,
+  "label": "Type F2A & F2B",
+  "total_2025_26": 4052,
+  "flats_note": null,
+  "types": [
+   "F2A",
+   "F2B"
+  ]
+ },
+ {
+  "block": "John Trundle Court",
+  "pct": 1.22,
+  "label": "Type P2A",
+  "total_2025_26": 6772,
+  "flats_note": null,
+  "types": [
+   "P2A"
+  ]
+ },
+ {
+  "block": "John Trundle Court",
+  "pct": 1.23,
+  "label": "Type P2B",
+  "total_2025_26": 6828,
+  "flats_note": null,
+  "types": [
+   "P2B"
+  ]
+ },
+ {
+  "block": "Lambert Jones Mews",
+  "pct": 12.32,
+  "label": "",
+  "total_2025_26": 9531,
+  "flats_note": null,
+  "types": []
+ },
+ {
+  "block": "Lambert Jones Mews",
+  "pct": 12.56,
+  "label": "",
+  "total_2025_26": 9717,
+  "flats_note": null,
+  "types": []
+ },
+ {
+  "block": "Lauderdale Tower",
+  "pct": 0.8308,
+  "label": "",
+  "total_2025_26": 11931,
+  "flats_note": null,
+  "types": []
+ },
+ {
+  "block": "Lauderdale Tower",
+  "pct": 1.6983,
+  "label": "Type 4A",
+  "total_2025_26": 24168,
+  "flats_note": null,
+  "types": [
+   "4A"
+  ]
+ },
+ {
+  "block": "Lauderdale Tower",
+  "pct": 1.8042,
+  "label": "Type 4B",
+  "total_2025_26": 25659,
+  "flats_note": null,
+  "types": [
+   "4B"
+  ]
+ },
+ {
+  "block": "Lauderdale Tower",
+  "pct": 2.0192,
+  "label": "Type 4C",
+  "total_2025_26": 28687,
+  "flats_note": null,
+  "types": [
+   "4C"
+  ]
+ },
+ {
+  "block": "Lauderdale Tower",
+  "pct": 0.5979,
+  "label": "Type 6B",
+  "total_2025_26": 8586,
+  "flats_note": null,
+  "types": [
+   "6B"
+  ]
+ },
+ {
+  "block": "Mountjoy House",
+  "pct": 1.38,
+  "label": "Type 24 & 32",
+  "total_2025_26": 5140,
+  "flats_note": null,
+  "types": [
+   "24",
+   "32"
+  ]
+ },
+ {
+  "block": "Mountjoy House",
+  "pct": 1.8,
+  "label": "Type 25",
+  "total_2025_26": 6704,
+  "flats_note": null,
+  "types": [
+   "25"
+  ]
+ },
+ {
+  "block": "Mountjoy House",
+  "pct": 1.46,
+  "label": "Type 26",
+  "total_2025_26": 5438,
+  "flats_note": null,
+  "types": [
+   "26"
+  ]
+ },
+ {
+  "block": "Mountjoy House",
+  "pct": 1.36,
+  "label": "Type 27",
+  "total_2025_26": 5065,
+  "flats_note": null,
+  "types": [
+   "27"
+  ]
+ },
+ {
+  "block": "Mountjoy House",
+  "pct": 1.58,
+  "label": "Type 28",
+  "total_2025_26": 5884,
+  "flats_note": null,
+  "types": [
+   "28"
+  ]
+ },
+ {
+  "block": "Mountjoy House",
+  "pct": 1.62,
+  "label": "Type 29",
+  "total_2025_26": 6033,
+  "flats_note": null,
+  "types": [
+   "29"
+  ]
+ },
+ {
+  "block": "Mountjoy House",
+  "pct": 1.7,
+  "label": "Type 30",
+  "total_2025_26": 6331,
+  "flats_note": null,
+  "types": [
+   "30"
+  ]
+ },
+ {
+  "block": "Mountjoy House",
+  "pct": 1.48,
+  "label": "Type 31 & 38",
+  "total_2025_26": 5512,
+  "flats_note": null,
+  "types": [
+   "31",
+   "38"
+  ]
+ },
+ {
+  "block": "Mountjoy House",
+  "pct": 1.3,
+  "label": "Type 33",
+  "total_2025_26": 4842,
+  "flats_note": null,
+  "types": [
+   "33"
+  ]
+ },
+ {
+  "block": "Mountjoy House",
+  "pct": 1.18,
+  "label": "Type 34",
+  "total_2025_26": 4395,
+  "flats_note": null,
+  "types": [
+   "34"
+  ]
+ },
+ {
+  "block": "Mountjoy House",
+  "pct": 2.15,
+  "label": "Type 35",
+  "total_2025_26": 8007,
+  "flats_note": null,
+  "types": [
+   "35"
+  ]
+ },
+ {
+  "block": "Mountjoy House",
+  "pct": 2.06,
+  "label": "Type 36",
+  "total_2025_26": 7672,
+  "flats_note": null,
+  "types": [
+   "36"
+  ]
+ },
+ {
+  "block": "Mountjoy House",
+  "pct": 1.39,
+  "label": "Type 37",
+  "total_2025_26": 5177,
+  "flats_note": null,
+  "types": [
+   "37"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 1.24,
+  "label": "Type 26",
+  "total_2025_26": 6053,
+  "flats_note": null,
+  "types": [
+   "26"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 1.16,
+  "label": "Type 27",
+  "total_2025_26": 5663,
+  "flats_note": null,
+  "types": [
+   "27"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 1.33,
+  "label": "Type 28",
+  "total_2025_26": 6492,
+  "flats_note": null,
+  "types": [
+   "28"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 1.37,
+  "label": "Type 29",
+  "total_2025_26": 6688,
+  "flats_note": null,
+  "types": [
+   "29"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 1.26,
+  "label": "Type 31",
+  "total_2025_26": 6151,
+  "flats_note": null,
+  "types": [
+   "31"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 1.17,
+  "label": "Type 32",
+  "total_2025_26": 5711,
+  "flats_note": null,
+  "types": [
+   "32"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 1.83,
+  "label": "Type 35",
+  "total_2025_26": 8933,
+  "flats_note": null,
+  "types": [
+   "35"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 1.75,
+  "label": "Type 36",
+  "total_2025_26": 8543,
+  "flats_note": null,
+  "types": [
+   "36"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 1.53,
+  "label": "Type 39",
+  "total_2025_26": 7469,
+  "flats_note": null,
+  "types": [
+   "39"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 1.11,
+  "label": "Type 40",
+  "total_2025_26": 5418,
+  "flats_note": null,
+  "types": [
+   "40"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 1.45,
+  "label": "Type 41",
+  "total_2025_26": 7078,
+  "flats_note": null,
+  "types": [
+   "41"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 2.05,
+  "label": "Type 42",
+  "total_2025_26": 10007,
+  "flats_note": null,
+  "types": [
+   "42"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 1.64,
+  "label": "Type 43",
+  "total_2025_26": 8006,
+  "flats_note": null,
+  "types": [
+   "43"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 0.73,
+  "label": "Type 44",
+  "total_2025_26": 3563,
+  "flats_note": null,
+  "types": [
+   "44"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 0.85,
+  "label": "Type 45",
+  "total_2025_26": 4149,
+  "flats_note": null,
+  "types": [
+   "45"
+  ]
+ },
+ {
+  "block": "Seddon House",
+  "pct": 1.26,
+  "label": "Type 46",
+  "total_2025_26": 6151,
+  "flats_note": null,
+  "types": [
+   "46"
+  ]
+ },
+ {
+  "block": "Shakespeare Tower",
+  "pct": 0.834,
+  "label": "",
+  "total_2025_26": 10208,
+  "flats_note": null,
+  "types": []
+ },
+ {
+  "block": "Shakespeare Tower",
+  "pct": 1.77,
+  "label": "Type 4A",
+  "total_2025_26": 21665,
+  "flats_note": null,
+  "types": [
+   "4A"
+  ]
+ },
+ {
+  "block": "Shakespeare Tower",
+  "pct": 1.88,
+  "label": "Type 4B",
+  "total_2025_26": 23012,
+  "flats_note": null,
+  "types": [
+   "4B"
+  ]
+ },
+ {
+  "block": "Shakespeare Tower",
+  "pct": 2.108,
+  "label": "Type 4C",
+  "total_2025_26": 25803,
+  "flats_note": null,
+  "types": [
+   "4C"
+  ]
+ },
+ {
+  "block": "Speed House",
+  "pct": 1.02,
+  "label": "Type 19",
+  "total_2025_26": 6388,
+  "flats_note": null,
+  "types": [
+   "19"
+  ]
+ },
+ {
+  "block": "Speed House",
+  "pct": 0.865,
+  "label": "Type 20",
+  "total_2025_26": 5417,
+  "flats_note": null,
+  "types": [
+   "20"
+  ]
+ },
+ {
+  "block": "Speed House",
+  "pct": 0.87,
+  "label": "Type 21",
+  "total_2025_26": 5448,
+  "flats_note": null,
+  "types": [
+   "21"
+  ]
+ },
+ {
+  "block": "Speed House",
+  "pct": 0.8,
+  "label": "Type 22, 23 & 60",
+  "total_2025_26": 5010,
+  "flats_note": null,
+  "types": [
+   "22",
+   "23",
+   "60"
+  ]
+ },
+ {
+  "block": "Speed House",
+  "pct": 0.845,
+  "label": "Type 58",
+  "total_2025_26": 5292,
+  "flats_note": null,
+  "types": [
+   "58"
+  ]
+ },
+ {
+  "block": "Speed House",
+  "pct": 0.73,
+  "label": "Type 84",
+  "total_2025_26": 4572,
+  "flats_note": null,
+  "types": [
+   "84"
+  ]
+ },
+ {
+  "block": "Speed House",
+  "pct": 1.25,
+  "label": "Type 85",
+  "total_2025_26": 7828,
+  "flats_note": null,
+  "types": [
+   "85"
+  ]
+ },
+ {
+  "block": "Speed House",
+  "pct": 1.08,
+  "label": "Type 86",
+  "total_2025_26": 6763,
+  "flats_note": null,
+  "types": [
+   "86"
+  ]
+ },
+ {
+  "block": "Thomas More House",
+  "pct": 0.33623,
+  "label": "Type 12",
+  "total_2025_26": 2839,
+  "flats_note": null,
+  "types": [
+   "12"
+  ]
+ },
+ {
+  "block": "Thomas More House",
+  "pct": 0.32634,
+  "label": "Type 13",
+  "total_2025_26": 2755,
+  "flats_note": null,
+  "types": [
+   "13"
+  ]
+ },
+ {
+  "block": "Thomas More House",
+  "pct": 0.29668,
+  "label": "Type 13 (odd)",
+  "total_2025_26": 2505,
+  "flats_note": "odd",
+  "types": [
+   "13"
+  ]
+ },
+ {
+  "block": "Thomas More House",
+  "pct": 0.35601,
+  "label": "Type 14",
+  "total_2025_26": 3006,
+  "flats_note": null,
+  "types": [
+   "14"
+  ]
+ },
+ {
+  "block": "Thomas More House",
+  "pct": 0.5538,
+  "label": "Type 16",
+  "total_2025_26": 4675,
+  "flats_note": null,
+  "types": [
+   "16"
+  ]
+ },
+ {
+  "block": "Thomas More House",
+  "pct": 0.75158,
+  "label": "Type 19",
+  "total_2025_26": 6345,
+  "flats_note": null,
+  "types": [
+   "19"
+  ]
+ },
+ {
+  "block": "Thomas More House",
+  "pct": 0.6428,
+  "label": "Type 20 & 21",
+  "total_2025_26": 5427,
+  "flats_note": null,
+  "types": [
+   "20",
+   "21"
+  ]
+ },
+ {
+  "block": "Thomas More House",
+  "pct": 0.59335,
+  "label": "Type 22 & 23",
+  "total_2025_26": 5009,
+  "flats_note": null,
+  "types": [
+   "22",
+   "23"
+  ]
+ },
+ {
+  "block": "Willoughby House",
+  "pct": 0.59,
+  "label": "Type 90 & 91",
+  "total_2025_26": 6204,
+  "flats_note": null,
+  "types": [
+   "90",
+   "91"
+  ]
+ },
+ {
+  "block": "Willoughby House",
+  "pct": 0.55,
+  "label": "Type 92",
+  "total_2025_26": 5783,
+  "flats_note": null,
+  "types": [
+   "92"
+  ]
+ },
+ {
+  "block": "Willoughby House",
+  "pct": 0.57,
+  "label": "Type 93",
+  "total_2025_26": 5993,
+  "flats_note": null,
+  "types": [
+   "93"
+  ]
+ },
+ {
+  "block": "Willoughby House",
+  "pct": 0.53,
+  "label": "Type 94 & 95",
+  "total_2025_26": 5573,
+  "flats_note": null,
+  "types": [
+   "94",
+   "95"
+  ]
+ },
+ {
+  "block": "Willoughby House",
+  "pct": 0.68,
+  "label": "Type 96, 97, 113 & 115",
+  "total_2025_26": 7150,
+  "flats_note": null,
+  "types": [
+   "96",
+   "97",
+   "113",
+   "115"
+  ]
+ },
+ {
+  "block": "Willoughby House",
+  "pct": 0.605,
+  "label": "Type 93",
+  "total_2025_26": 6361,
+  "flats_note": null,
+  "types": [
+   "93"
+  ]
+ },
+ {
+  "block": "Willoughby House",
+  "pct": 0.63,
+  "label": "Type 99, 106 & 114",
+  "total_2025_26": 6624,
+  "flats_note": null,
+  "types": [
+   "99",
+   "106",
+   "114"
+  ]
+ },
+ {
+  "block": "Willoughby House",
+  "pct": 0.62,
+  "label": "Type 100",
+  "total_2025_26": 6519,
+  "flats_note": null,
+  "types": [
+   "100"
+  ]
+ },
+ {
+  "block": "Willoughby House",
+  "pct": 0.76,
+  "label": "Type 101",
+  "total_2025_26": 7991,
+  "flats_note": null,
+  "types": [
+   "101"
+  ]
+ },
+ {
+  "block": "Willoughby House",
+  "pct": 0.72,
+  "label": "Type 103 & 108",
+  "total_2025_26": 7571,
+  "flats_note": null,
+  "types": [
+   "103",
+   "108"
+  ]
+ },
+ {
+  "block": "Willoughby House",
+  "pct": 0.7,
+  "label": "Type 104, 107 & 111",
+  "total_2025_26": 7360,
+  "flats_note": null,
+  "types": [
+   "104",
+   "107",
+   "111"
+  ]
+ },
+ {
+  "block": "Willoughby House",
+  "pct": 0.8,
+  "label": "Type 105 & 112",
+  "total_2025_26": 8412,
+  "flats_note": null,
+  "types": [
+   "105",
+   "112"
+  ]
+ },
+ {
+  "block": "Willoughby House",
+  "pct": 0.89,
+  "label": "Type 109",
+  "total_2025_26": 9358,
+  "flats_note": null,
+  "types": [
+   "109"
+  ]
+ },
+ {
+  "block": "Willoughby House",
+  "pct": 0.78,
+  "label": "Type 110",
+  "total_2025_26": 8201,
+  "flats_note": null,
+  "types": [
+   "110"
+  ]
+ }
+]

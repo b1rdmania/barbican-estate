@@ -1,0 +1,9 @@
+#!/bin/sh
+# Usage: ./flat <frankharris id or url> [...]
+# Fetches the listings, rebuilds site/, and republishes to the same here.now URL.
+set -e
+cd "$(dirname "$0")"
+node fetch.mjs "$@"
+node build.mjs
+SLUG=$(jq -r '.publishes | keys[0] // empty' .herenow/state.json 2>/dev/null || true)
+~/.claude/skills/here-now/scripts/publish.sh site ${SLUG:+--slug "$SLUG"} --client claude-code

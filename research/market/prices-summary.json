@@ -1,0 +1,2511 @@
+{
+ "source": "HM Land Registry PPD via SPARQL, postcode EC2Y 8*",
+ "retrieved": "2026-10-10",
+ "total": 3463,
+ "first": "1995-01-05",
+ "last": "2026-08-12",
+ "by_year": {
+  "1995": {
+   "count": 126,
+   "median": 105000.0
+  },
+  "1996": {
+   "count": 153,
+   "median": 105000
+  },
+  "1997": {
+   "count": 226,
+   "median": 138038.0
+  },
+  "1998": {
+   "count": 175,
+   "median": 160000
+  },
+  "1999": {
+   "count": 219,
+   "median": 172000
+  },
+  "2000": {
+   "count": 137,
+   "median": 229500
+  },
+  "2001": {
+   "count": 152,
+   "median": 235000.0
+  },
+  "2002": {
+   "count": 154,
+   "median": 275000.0
+  },
+  "2003": {
+   "count": 150,
+   "median": 277500.0
+  },
+  "2004": {
+   "count": 129,
+   "median": 325000
+  },
+  "2005": {
+   "count": 135,
+   "median": 330000
+  },
+  "2006": {
+   "count": 115,
+   "median": 392000
+  },
+  "2007": {
+   "count": 107,
+   "median": 482500
+  },
+  "2008": {
+   "count": 32,
+   "median": 465000.0
+  },
+  "2009": {
+   "count": 82,
+   "median": 477500.0
+  },
+  "2010": {
+   "count": 129,
+   "median": 499995
+  },
+  "2011": {
+   "count": 106,
+   "median": 497475.0
+  },
+  "2012": {
+   "count": 70,
+   "median": 530000.0
+  },
+  "2013": {
+   "count": 73,
+   "median": 715002
+  },
+  "2014": {
+   "count": 84,
+   "median": 775000.0
+  },
+  "2015": {
+   "count": 84,
+   "median": 846000.0
+  },
+  "2016": {
+   "count": 68,
+   "median": 880000.0
+  },
+  "2017": {
+   "count": 139,
+   "median": 860000
+  },
+  "2018": {
+   "count": 85,
+   "median": 765000
+  },
+  "2019": {
+   "count": 58,
+   "median": 825000.0
+  },
+  "2020": {
+   "count": 58,
+   "median": 808500.0
+  },
+  "2021": {
+   "count": 83,
+   "median": 815000
+  },
+  "2022": {
+   "count": 78,
+   "median": 817500.0
+  },
+  "2023": {
+   "count": 72,
+   "median": 890000.0
+  },
+  "2024": {
+   "count": 76,
+   "median": 877500.0
+  },
+  "2025": {
+   "count": 84,
+   "median": 925000.0
+  },
+  "2026": {
+   "count": 24,
+   "median": 809146.0
+  }
+ },
+ "by_block": {
+  "Andrewes House": {
+   "count": 315,
+   "median": 341120
+  },
+  "Ben Jonson House": {
+   "count": 333,
+   "median": 295000
+  },
+  "Brandon Mews": {
+   "count": 13,
+   "median": 980000
+  },
+  "Breton House": {
+   "count": 179,
+   "median": 240000
+  },
+  "Bryer Court": {
+   "count": 96,
+   "median": 200000.0
+  },
+  "Bunyan Court": {
+   "count": 124,
+   "median": 340000.0
+  },
+  "Cromwell Tower": {
+   "count": 150,
+   "median": 540000.0
+  },
+  "Defoe House": {
+   "count": 262,
+   "median": 425000.0
+  },
+  "Gilbert House": {
+   "count": 110,
+   "median": 490000.0
+  },
+  "John Trundle Court": {
+   "count": 224,
+   "median": 204000.0
+  },
+  "Lauderdale Tower": {
+   "count": 177,
+   "median": 580000
+  },
+  "Mountjoy House": {
+   "count": 109,
+   "median": 395000
+  },
+  "Seddon House": {
+   "count": 106,
+   "median": 353500.0
+  },
+  "Shakespeare Tower": {
+   "count": 165,
+   "median": 555000
+  },
+  "Speed House": {
+   "count": 171,
+   "median": 350000
+  },
+  "Thomas More House": {
+   "count": 263,
+   "median": 377500
+  },
+  "Willoughby House": {
+   "count": 195,
+   "median": 377500
+  },
+  "other": {
+   "count": 471,
+   "median": 470000
+  }
+ },
+ "by_block_year": {
+  "Andrewes House": {
+   "1995": {
+    "count": 14,
+    "median": 105000.0
+   },
+   "1996": {
+    "count": 14,
+    "median": 105500.0
+   },
+   "1997": {
+    "count": 19,
+    "median": 127000
+   },
+   "1998": {
+    "count": 9,
+    "median": 160000
+   },
+   "1999": {
+    "count": 31,
+    "median": 165000
+   },
+   "2000": {
+    "count": 13,
+    "median": 200000
+   },
+   "2001": {
+    "count": 11,
+    "median": 236000
+   },
+   "2002": {
+    "count": 17,
+    "median": 265000
+   },
+   "2003": {
+    "count": 10,
+    "median": 270000.0
+   },
+   "2004": {
+    "count": 13,
+    "median": 315000
+   },
+   "2005": {
+    "count": 16,
+    "median": 340000.0
+   },
+   "2006": {
+    "count": 12,
+    "median": 373500.0
+   },
+   "2007": {
+    "count": 12,
+    "median": 487500.0
+   },
+   "2008": {
+    "count": 3,
+    "median": 470000
+   },
+   "2009": {
+    "count": 5,
+    "median": 500000
+   },
+   "2010": {
+    "count": 7,
+    "median": 500000
+   },
+   "2011": {
+    "count": 11,
+    "median": 550000
+   },
+   "2012": {
+    "count": 8,
+    "median": 547500.0
+   },
+   "2013": {
+    "count": 6,
+    "median": 707476.0
+   },
+   "2014": {
+    "count": 6,
+    "median": 802500.0
+   },
+   "2015": {
+    "count": 9,
+    "median": 880000
+   },
+   "2016": {
+    "count": 12,
+    "median": 847500.0
+   },
+   "2017": {
+    "count": 5,
+    "median": 835000
+   },
+   "2018": {
+    "count": 7,
+    "median": 825000
+   },
+   "2019": {
+    "count": 6,
+    "median": 862500.0
+   },
+   "2020": {
+    "count": 2,
+    "median": 798500.0
+   },
+   "2021": {
+    "count": 11,
+    "median": 800000
+   },
+   "2022": {
+    "count": 7,
+    "median": 810000
+   },
+   "2023": {
+    "count": 4,
+    "median": 875000.0
+   },
+   "2024": {
+    "count": 7,
+    "median": 890000
+   },
+   "2025": {
+    "count": 7,
+    "median": 830000
+   },
+   "2026": {
+    "count": 1,
+    "median": 793292
+   }
+  },
+  "Ben Jonson House": {
+   "1995": {
+    "count": 14,
+    "median": 89875.0
+   },
+   "1996": {
+    "count": 23,
+    "median": 90000
+   },
+   "1997": {
+    "count": 14,
+    "median": 103750.0
+   },
+   "1998": {
+    "count": 16,
+    "median": 122090.0
+   },
+   "1999": {
+    "count": 19,
+    "median": 149000
+   },
+   "2000": {
+    "count": 17,
+    "median": 157000
+   },
+   "2001": {
+    "count": 19,
+    "median": 205000
+   },
+   "2002": {
+    "count": 17,
+    "median": 230000
+   },
+   "2003": {
+    "count": 18,
+    "median": 249500.0
+   },
+   "2004": {
+    "count": 10,
+    "median": 283750.0
+   },
+   "2005": {
+    "count": 18,
+    "median": 307500.0
+   },
+   "2006": {
+    "count": 14,
+    "median": 308750.0
+   },
+   "2007": {
+    "count": 13,
+    "median": 395000
+   },
+   "2008": {
+    "count": 2,
+    "median": 432500.0
+   },
+   "2009": {
+    "count": 7,
+    "median": 350000
+   },
+   "2010": {
+    "count": 13,
+    "median": 335000
+   },
+   "2011": {
+    "count": 7,
+    "median": 460000
+   },
+   "2012": {
+    "count": 4,
+    "median": 438750.0
+   },
+   "2013": {
+    "count": 7,
+    "median": 520000
+   },
+   "2014": {
+    "count": 8,
+    "median": 737500.0
+   },
+   "2015": {
+    "count": 8,
+    "median": 740000.0
+   },
+   "2016": {
+    "count": 7,
+    "median": 734000
+   },
+   "2017": {
+    "count": 6,
+    "median": 757500.0
+   },
+   "2018": {
+    "count": 6,
+    "median": 750000.0
+   },
+   "2019": {
+    "count": 4,
+    "median": 763750.0
+   },
+   "2020": {
+    "count": 1,
+    "median": 530000
+   },
+   "2021": {
+    "count": 9,
+    "median": 518000
+   },
+   "2022": {
+    "count": 9,
+    "median": 670000
+   },
+   "2023": {
+    "count": 6,
+    "median": 637837.5
+   },
+   "2024": {
+    "count": 7,
+    "median": 700000
+   },
+   "2025": {
+    "count": 8,
+    "median": 705000.0
+   },
+   "2026": {
+    "count": 2,
+    "median": 910500.0
+   }
+  },
+  "Brandon Mews": {
+   "2015": {
+    "count": 2,
+    "median": 935000.0
+   },
+   "2017": {
+    "count": 1,
+    "median": 950000
+   },
+   "2018": {
+    "count": 2,
+    "median": 1043500.0
+   },
+   "2020": {
+    "count": 2,
+    "median": 491480.0
+   },
+   "2021": {
+    "count": 2,
+    "median": 441250.0
+   },
+   "2022": {
+    "count": 1,
+    "median": 1390000
+   },
+   "2023": {
+    "count": 1,
+    "median": 1331999
+   },
+   "2025": {
+    "count": 1,
+    "median": 1125000
+   },
+   "2026": {
+    "count": 1,
+    "median": 980000
+   }
+  },
+  "Breton House": {
+   "1995": {
+    "count": 8,
+    "median": 61000.0
+   },
+   "1996": {
+    "count": 11,
+    "median": 62500
+   },
+   "1997": {
+    "count": 6,
+    "median": 69000.0
+   },
+   "1998": {
+    "count": 6,
+    "median": 86000.0
+   },
+   "1999": {
+    "count": 8,
+    "median": 95000.0
+   },
+   "2000": {
+    "count": 7,
+    "median": 135000
+   },
+   "2001": {
+    "count": 9,
+    "median": 133000
+   },
+   "2002": {
+    "count": 6,
+    "median": 180500.0
+   },
+   "2003": {
+    "count": 11,
+    "median": 190000
+   },
+   "2004": {
+    "count": 8,
+    "median": 206000.0
+   },
+   "2005": {
+    "count": 5,
+    "median": 190000
+   },
+   "2006": {
+    "count": 7,
+    "median": 220000
+   },
+   "2007": {
+    "count": 8,
+    "median": 286250.0
+   },
+   "2008": {
+    "count": 3,
+    "median": 305000
+   },
+   "2009": {
+    "count": 4,
+    "median": 297500.0
+   },
+   "2010": {
+    "count": 6,
+    "median": 250000.0
+   },
+   "2011": {
+    "count": 4,
+    "median": 280000.0
+   },
+   "2012": {
+    "count": 4,
+    "median": 275550.0
+   },
+   "2013": {
+    "count": 8,
+    "median": 380500.0
+   },
+   "2014": {
+    "count": 5,
+    "median": 382000
+   },
+   "2015": {
+    "count": 9,
+    "median": 500000
+   },
+   "2017": {
+    "count": 3,
+    "median": 490000
+   },
+   "2018": {
+    "count": 6,
+    "median": 478750.0
+   },
+   "2019": {
+    "count": 8,
+    "median": 482500.0
+   },
+   "2020": {
+    "count": 4,
+    "median": 537500.0
+   },
+   "2021": {
+    "count": 3,
+    "median": 485000
+   },
+   "2022": {
+    "count": 3,
+    "median": 535000
+   },
+   "2023": {
+    "count": 5,
+    "median": 515000
+   },
+   "2024": {
+    "count": 2,
+    "median": 570000.0
+   },
+   "2025": {
+    "count": 2,
+    "median": 650000.0
+   }
+  },
+  "Bryer Court": {
+   "1995": {
+    "count": 1,
+    "median": 60000
+   },
+   "1996": {
+    "count": 3,
+    "median": 65500
+   },
+   "1997": {
+    "count": 4,
+    "median": 82250.0
+   },
+   "1998": {
+    "count": 4,
+    "median": 90000.0
+   },
+   "1999": {
+    "count": 9,
+    "median": 99500
+   },
+   "2000": {
+    "count": 6,
+    "median": 134000.0
+   },
+   "2001": {
+    "count": 6,
+    "median": 157750.0
+   },
+   "2002": {
+    "count": 7,
+    "median": 190000
+   },
+   "2003": {
+    "count": 8,
+    "median": 187000.0
+   },
+   "2004": {
+    "count": 4,
+    "median": 212500.0
+   },
+   "2005": {
+    "count": 3,
+    "median": 231000
+   },
+   "2006": {
+    "count": 3,
+    "median": 245000
+   },
+   "2007": {
+    "count": 3,
+    "median": 340000
+   },
+   "2008": {
+    "count": 1,
+    "median": 315000
+   },
+   "2009": {
+    "count": 3,
+    "median": 300000
+   },
+   "2010": {
+    "count": 5,
+    "median": 340000
+   },
+   "2011": {
+    "count": 3,
+    "median": 333000
+   },
+   "2012": {
+    "count": 3,
+    "median": 375000
+   },
+   "2013": {
+    "count": 1,
+    "median": 420000
+   },
+   "2014": {
+    "count": 1,
+    "median": 437600
+   },
+   "2016": {
+    "count": 1,
+    "median": 575000
+   },
+   "2017": {
+    "count": 3,
+    "median": 535000
+   },
+   "2018": {
+    "count": 2,
+    "median": 515000.0
+   },
+   "2019": {
+    "count": 1,
+    "median": 495000
+   },
+   "2020": {
+    "count": 3,
+    "median": 500000
+   },
+   "2021": {
+    "count": 1,
+    "median": 515000
+   },
+   "2022": {
+    "count": 2,
+    "median": 511750.0
+   },
+   "2023": {
+    "count": 1,
+    "median": 550000
+   },
+   "2024": {
+    "count": 4,
+    "median": 530000.0
+   }
+  },
+  "Bunyan Court": {
+   "1995": {
+    "count": 4,
+    "median": 89750.0
+   },
+   "1996": {
+    "count": 10,
+    "median": 93100.0
+   },
+   "1997": {
+    "count": 6,
+    "median": 122500.0
+   },
+   "1998": {
+    "count": 5,
+    "median": 105000
+   },
+   "1999": {
+    "count": 7,
+    "median": 128000
+   },
+   "2000": {
+    "count": 5,
+    "median": 160000
+   },
+   "2001": {
+    "count": 9,
+    "median": 210000
+   },
+   "2002": {
+    "count": 6,
+    "median": 222500.0
+   },
+   "2003": {
+    "count": 4,
+    "median": 249975.0
+   },
+   "2004": {
+    "count": 1,
+    "median": 420000
+   },
+   "2005": {
+    "count": 7,
+    "median": 320000
+   },
+   "2006": {
+    "count": 2,
+    "median": 470500.0
+   },
+   "2007": {
+    "count": 4,
+    "median": 595000.0
+   },
+   "2008": {
+    "count": 2,
+    "median": 405000.0
+   },
+   "2009": {
+    "count": 6,
+    "median": 397500.0
+   },
+   "2010": {
+    "count": 2,
+    "median": 548750.0
+   },
+   "2011": {
+    "count": 6,
+    "median": 425500.0
+   },
+   "2012": {
+    "count": 3,
+    "median": 509000
+   },
+   "2014": {
+    "count": 2,
+    "median": 766130.0
+   },
+   "2015": {
+    "count": 3,
+    "median": 700000
+   },
+   "2016": {
+    "count": 5,
+    "median": 815000
+   },
+   "2017": {
+    "count": 2,
+    "median": 1100000.0
+   },
+   "2018": {
+    "count": 3,
+    "median": 716000
+   },
+   "2019": {
+    "count": 3,
+    "median": 685000
+   },
+   "2020": {
+    "count": 3,
+    "median": 1200000
+   },
+   "2021": {
+    "count": 3,
+    "median": 700000
+   },
+   "2022": {
+    "count": 3,
+    "median": 725000
+   },
+   "2023": {
+    "count": 2,
+    "median": 982500.0
+   },
+   "2024": {
+    "count": 2,
+    "median": 810000.0
+   },
+   "2025": {
+    "count": 2,
+    "median": 623750.0
+   },
+   "2026": {
+    "count": 2,
+    "median": 1010000.0
+   }
+  },
+  "Cromwell Tower": {
+   "1995": {
+    "count": 6,
+    "median": 138500.0
+   },
+   "1996": {
+    "count": 12,
+    "median": 175500.0
+   },
+   "1997": {
+    "count": 9,
+    "median": 195000
+   },
+   "1998": {
+    "count": 7,
+    "median": 235000
+   },
+   "1999": {
+    "count": 13,
+    "median": 238000
+   },
+   "2000": {
+    "count": 10,
+    "median": 411000.0
+   },
+   "2001": {
+    "count": 5,
+    "median": 415000
+   },
+   "2002": {
+    "count": 6,
+    "median": 543750.0
+   },
+   "2003": {
+    "count": 11,
+    "median": 530000
+   },
+   "2004": {
+    "count": 7,
+    "median": 538000
+   },
+   "2005": {
+    "count": 4,
+    "median": 547500.0
+   },
+   "2006": {
+    "count": 4,
+    "median": 717500.0
+   },
+   "2007": {
+    "count": 2,
+    "median": 1300000.0
+   },
+   "2008": {
+    "count": 1,
+    "median": 900000
+   },
+   "2009": {
+    "count": 2,
+    "median": 914000.0
+   },
+   "2010": {
+    "count": 3,
+    "median": 880000
+   },
+   "2011": {
+    "count": 3,
+    "median": 840000
+   },
+   "2012": {
+    "count": 1,
+    "median": 999999
+   },
+   "2013": {
+    "count": 6,
+    "median": 1090500.0
+   },
+   "2014": {
+    "count": 3,
+    "median": 1750000
+   },
+   "2015": {
+    "count": 3,
+    "median": 1750000
+   },
+   "2016": {
+    "count": 1,
+    "median": 1830000
+   },
+   "2017": {
+    "count": 4,
+    "median": 1812500.0
+   },
+   "2018": {
+    "count": 3,
+    "median": 1925000
+   },
+   "2019": {
+    "count": 3,
+    "median": 1725000
+   },
+   "2020": {
+    "count": 1,
+    "median": 2000000
+   },
+   "2021": {
+    "count": 4,
+    "median": 1412000.0
+   },
+   "2022": {
+    "count": 3,
+    "median": 1550000
+   },
+   "2023": {
+    "count": 5,
+    "median": 2000000
+   },
+   "2024": {
+    "count": 2,
+    "median": 1525000.0
+   },
+   "2025": {
+    "count": 6,
+    "median": 1600000.0
+   }
+  },
+  "Defoe House": {
+   "1995": {
+    "count": 9,
+    "median": 105000
+   },
+   "1996": {
+    "count": 12,
+    "median": 112375.0
+   },
+   "1997": {
+    "count": 9,
+    "median": 130000
+   },
+   "1998": {
+    "count": 16,
+    "median": 148750.0
+   },
+   "1999": {
+    "count": 15,
+    "median": 161000
+   },
+   "2000": {
+    "count": 3,
+    "median": 225000
+   },
+   "2001": {
+    "count": 12,
+    "median": 247500.0
+   },
+   "2002": {
+    "count": 13,
+    "median": 295000
+   },
+   "2003": {
+    "count": 13,
+    "median": 295000
+   },
+   "2004": {
+    "count": 12,
+    "median": 335500.0
+   },
+   "2005": {
+    "count": 9,
+    "median": 320000
+   },
+   "2006": {
+    "count": 13,
+    "median": 415000
+   },
+   "2007": {
+    "count": 8,
+    "median": 550000.0
+   },
+   "2008": {
+    "count": 3,
+    "median": 563000
+   },
+   "2009": {
+    "count": 6,
+    "median": 499750.0
+   },
+   "2010": {
+    "count": 5,
+    "median": 527500
+   },
+   "2011": {
+    "count": 4,
+    "median": 605000.0
+   },
+   "2012": {
+    "count": 4,
+    "median": 595000.0
+   },
+   "2013": {
+    "count": 8,
+    "median": 742500.0
+   },
+   "2014": {
+    "count": 9,
+    "median": 854000
+   },
+   "2015": {
+    "count": 8,
+    "median": 900000.0
+   },
+   "2016": {
+    "count": 5,
+    "median": 892000
+   },
+   "2017": {
+    "count": 6,
+    "median": 950000.0
+   },
+   "2018": {
+    "count": 8,
+    "median": 902500.0
+   },
+   "2019": {
+    "count": 6,
+    "median": 827500.0
+   },
+   "2020": {
+    "count": 6,
+    "median": 832500.0
+   },
+   "2021": {
+    "count": 9,
+    "median": 837000
+   },
+   "2022": {
+    "count": 11,
+    "median": 950000
+   },
+   "2023": {
+    "count": 2,
+    "median": 1222500.0
+   },
+   "2024": {
+    "count": 7,
+    "median": 950000
+   },
+   "2025": {
+    "count": 9,
+    "median": 955000
+   },
+   "2026": {
+    "count": 2,
+    "median": 799999.5
+   }
+  },
+  "Gilbert House": {
+   "1995": {
+    "count": 4,
+    "median": 130500.0
+   },
+   "1996": {
+    "count": 3,
+    "median": 135000
+   },
+   "1997": {
+    "count": 1,
+    "median": 154000
+   },
+   "1998": {
+    "count": 7,
+    "median": 173000
+   },
+   "1999": {
+    "count": 4,
+    "median": 186000.0
+   },
+   "2000": {
+    "count": 10,
+    "median": 237500.0
+   },
+   "2001": {
+    "count": 5,
+    "median": 240000
+   },
+   "2002": {
+    "count": 5,
+    "median": 320000
+   },
+   "2003": {
+    "count": 2,
+    "median": 361000.0
+   },
+   "2004": {
+    "count": 6,
+    "median": 356500.0
+   },
+   "2005": {
+    "count": 4,
+    "median": 401000.0
+   },
+   "2006": {
+    "count": 5,
+    "median": 460000
+   },
+   "2007": {
+    "count": 4,
+    "median": 602500.0
+   },
+   "2008": {
+    "count": 1,
+    "median": 545000
+   },
+   "2009": {
+    "count": 4,
+    "median": 697500.0
+   },
+   "2010": {
+    "count": 3,
+    "median": 580000
+   },
+   "2011": {
+    "count": 2,
+    "median": 635050.0
+   },
+   "2012": {
+    "count": 4,
+    "median": 662500.0
+   },
+   "2014": {
+    "count": 2,
+    "median": 849125.0
+   },
+   "2015": {
+    "count": 2,
+    "median": 875503.5
+   },
+   "2016": {
+    "count": 2,
+    "median": 1007500.0
+   },
+   "2017": {
+    "count": 1,
+    "median": 1010000
+   },
+   "2018": {
+    "count": 1,
+    "median": 1300000
+   },
+   "2019": {
+    "count": 1,
+    "median": 930750
+   },
+   "2020": {
+    "count": 4,
+    "median": 715000.0
+   },
+   "2021": {
+    "count": 6,
+    "median": 920000.0
+   },
+   "2022": {
+    "count": 2,
+    "median": 955000.0
+   },
+   "2023": {
+    "count": 3,
+    "median": 1080000
+   },
+   "2024": {
+    "count": 5,
+    "median": 1100000
+   },
+   "2025": {
+    "count": 7,
+    "median": 950000
+   }
+  },
+  "John Trundle Court": {
+   "1995": {
+    "count": 12,
+    "median": 57500.0
+   },
+   "1996": {
+    "count": 13,
+    "median": 60000
+   },
+   "1997": {
+    "count": 12,
+    "median": 75750.0
+   },
+   "1998": {
+    "count": 12,
+    "median": 88000.0
+   },
+   "1999": {
+    "count": 16,
+    "median": 95000.0
+   },
+   "2000": {
+    "count": 6,
+    "median": 121500.0
+   },
+   "2001": {
+    "count": 15,
+    "median": 142000
+   },
+   "2002": {
+    "count": 10,
+    "median": 180000.0
+   },
+   "2003": {
+    "count": 6,
+    "median": 173500.0
+   },
+   "2004": {
+    "count": 8,
+    "median": 199500.0
+   },
+   "2005": {
+    "count": 12,
+    "median": 204500.0
+   },
+   "2006": {
+    "count": 8,
+    "median": 230000.0
+   },
+   "2007": {
+    "count": 11,
+    "median": 288000
+   },
+   "2008": {
+    "count": 5,
+    "median": 285000
+   },
+   "2009": {
+    "count": 3,
+    "median": 260000
+   },
+   "2010": {
+    "count": 6,
+    "median": 320750.0
+   },
+   "2011": {
+    "count": 6,
+    "median": 279000.0
+   },
+   "2012": {
+    "count": 8,
+    "median": 315000.0
+   },
+   "2013": {
+    "count": 4,
+    "median": 400000.0
+   },
+   "2014": {
+    "count": 6,
+    "median": 445000.0
+   },
+   "2015": {
+    "count": 6,
+    "median": 527500.0
+   },
+   "2016": {
+    "count": 2,
+    "median": 445000.0
+   },
+   "2017": {
+    "count": 2,
+    "median": 695000.0
+   },
+   "2018": {
+    "count": 7,
+    "median": 485000
+   },
+   "2019": {
+    "count": 3,
+    "median": 920000
+   },
+   "2020": {
+    "count": 4,
+    "median": 480000.0
+   },
+   "2021": {
+    "count": 2,
+    "median": 638750.0
+   },
+   "2022": {
+    "count": 5,
+    "median": 440000
+   },
+   "2023": {
+    "count": 4,
+    "median": 513500.0
+   },
+   "2024": {
+    "count": 2,
+    "median": 467500.0
+   },
+   "2025": {
+    "count": 4,
+    "median": 405000.0
+   },
+   "2026": {
+    "count": 4,
+    "median": 470000.0
+   }
+  },
+  "Lauderdale Tower": {
+   "1995": {
+    "count": 8,
+    "median": 163750.0
+   },
+   "1996": {
+    "count": 9,
+    "median": 180000
+   },
+   "1997": {
+    "count": 9,
+    "median": 224500
+   },
+   "1998": {
+    "count": 16,
+    "median": 240999.5
+   },
+   "1999": {
+    "count": 14,
+    "median": 317500.0
+   },
+   "2000": {
+    "count": 7,
+    "median": 400000
+   },
+   "2001": {
+    "count": 6,
+    "median": 490500.0
+   },
+   "2002": {
+    "count": 6,
+    "median": 478500.0
+   },
+   "2003": {
+    "count": 9,
+    "median": 510000
+   },
+   "2004": {
+    "count": 7,
+    "median": 520000
+   },
+   "2005": {
+    "count": 8,
+    "median": 620000.0
+   },
+   "2006": {
+    "count": 4,
+    "median": 670500.0
+   },
+   "2007": {
+    "count": 4,
+    "median": 961500.0
+   },
+   "2009": {
+    "count": 5,
+    "median": 825000
+   },
+   "2010": {
+    "count": 8,
+    "median": 861250.0
+   },
+   "2012": {
+    "count": 4,
+    "median": 1087500.0
+   },
+   "2013": {
+    "count": 2,
+    "median": 1092500.0
+   },
+   "2014": {
+    "count": 3,
+    "median": 1800000
+   },
+   "2015": {
+    "count": 4,
+    "median": 1400000.0
+   },
+   "2016": {
+    "count": 7,
+    "median": 1650000
+   },
+   "2017": {
+    "count": 4,
+    "median": 1890000.0
+   },
+   "2018": {
+    "count": 3,
+    "median": 1675000
+   },
+   "2019": {
+    "count": 2,
+    "median": 1690000.0
+   },
+   "2020": {
+    "count": 2,
+    "median": 1535000.0
+   },
+   "2021": {
+    "count": 7,
+    "median": 1600000
+   },
+   "2022": {
+    "count": 6,
+    "median": 1610000.0
+   },
+   "2023": {
+    "count": 4,
+    "median": 1705000.0
+   },
+   "2024": {
+    "count": 1,
+    "median": 2000000
+   },
+   "2025": {
+    "count": 5,
+    "median": 1600000
+   },
+   "2026": {
+    "count": 3,
+    "median": 1625000
+   }
+  },
+  "Mountjoy House": {
+   "1995": {
+    "count": 5,
+    "median": 100000
+   },
+   "1996": {
+    "count": 5,
+    "median": 138000
+   },
+   "1997": {
+    "count": 9,
+    "median": 140000
+   },
+   "1998": {
+    "count": 6,
+    "median": 175000.0
+   },
+   "1999": {
+    "count": 5,
+    "median": 210000
+   },
+   "2000": {
+    "count": 2,
+    "median": 198500.0
+   },
+   "2001": {
+    "count": 5,
+    "median": 250000
+   },
+   "2002": {
+    "count": 8,
+    "median": 316000.0
+   },
+   "2003": {
+    "count": 2,
+    "median": 316000.0
+   },
+   "2005": {
+    "count": 6,
+    "median": 377500.0
+   },
+   "2006": {
+    "count": 7,
+    "median": 432778
+   },
+   "2007": {
+    "count": 8,
+    "median": 598750.0
+   },
+   "2008": {
+    "count": 1,
+    "median": 500000
+   },
+   "2009": {
+    "count": 5,
+    "median": 480000
+   },
+   "2011": {
+    "count": 1,
+    "median": 675000
+   },
+   "2012": {
+    "count": 1,
+    "median": 561000
+   },
+   "2013": {
+    "count": 5,
+    "median": 725000
+   },
+   "2014": {
+    "count": 3,
+    "median": 800000
+   },
+   "2015": {
+    "count": 4,
+    "median": 846000.0
+   },
+   "2016": {
+    "count": 3,
+    "median": 995000
+   },
+   "2017": {
+    "count": 1,
+    "median": 2000000
+   },
+   "2018": {
+    "count": 1,
+    "median": 965000
+   },
+   "2020": {
+    "count": 1,
+    "median": 1680000
+   },
+   "2021": {
+    "count": 3,
+    "median": 840000
+   },
+   "2022": {
+    "count": 3,
+    "median": 850000
+   },
+   "2023": {
+    "count": 1,
+    "median": 770000
+   },
+   "2024": {
+    "count": 6,
+    "median": 857500.0
+   },
+   "2025": {
+    "count": 2,
+    "median": 802500.0
+   }
+  },
+  "Seddon House": {
+   "1995": {
+    "count": 6,
+    "median": 123625.0
+   },
+   "1996": {
+    "count": 6,
+    "median": 114500.0
+   },
+   "1997": {
+    "count": 5,
+    "median": 117500
+   },
+   "1998": {
+    "count": 4,
+    "median": 137500.0
+   },
+   "1999": {
+    "count": 5,
+    "median": 190000
+   },
+   "2000": {
+    "count": 4,
+    "median": 230000.0
+   },
+   "2001": {
+    "count": 7,
+    "median": 235000
+   },
+   "2002": {
+    "count": 4,
+    "median": 284225.0
+   },
+   "2003": {
+    "count": 4,
+    "median": 345000.0
+   },
+   "2004": {
+    "count": 6,
+    "median": 333250.0
+   },
+   "2005": {
+    "count": 6,
+    "median": 312500.0
+   },
+   "2006": {
+    "count": 4,
+    "median": 372500.0
+   },
+   "2007": {
+    "count": 2,
+    "median": 472475.0
+   },
+   "2008": {
+    "count": 2,
+    "median": 386250.0
+   },
+   "2009": {
+    "count": 3,
+    "median": 470000
+   },
+   "2010": {
+    "count": 4,
+    "median": 467500.0
+   },
+   "2011": {
+    "count": 4,
+    "median": 490000.0
+   },
+   "2012": {
+    "count": 4,
+    "median": 550000.0
+   },
+   "2013": {
+    "count": 2,
+    "median": 782500.0
+   },
+   "2014": {
+    "count": 4,
+    "median": 843750.0
+   },
+   "2015": {
+    "count": 1,
+    "median": 815000
+   },
+   "2016": {
+    "count": 1,
+    "median": 2100000
+   },
+   "2017": {
+    "count": 2,
+    "median": 802500.0
+   },
+   "2018": {
+    "count": 1,
+    "median": 633333
+   },
+   "2019": {
+    "count": 3,
+    "median": 940000
+   },
+   "2020": {
+    "count": 2,
+    "median": 850000.0
+   },
+   "2021": {
+    "count": 1,
+    "median": 830000
+   },
+   "2022": {
+    "count": 2,
+    "median": 797500.0
+   },
+   "2023": {
+    "count": 3,
+    "median": 1000000
+   },
+   "2024": {
+    "count": 2,
+    "median": 910000.0
+   },
+   "2025": {
+    "count": 2,
+    "median": 877500.0
+   }
+  },
+  "Shakespeare Tower": {
+   "1995": {
+    "count": 7,
+    "median": 175000
+   },
+   "1996": {
+    "count": 7,
+    "median": 175000
+   },
+   "1997": {
+    "count": 13,
+    "median": 190000
+   },
+   "1998": {
+    "count": 16,
+    "median": 256000.0
+   },
+   "1999": {
+    "count": 10,
+    "median": 286000.0
+   },
+   "2000": {
+    "count": 10,
+    "median": 380000.0
+   },
+   "2001": {
+    "count": 5,
+    "median": 465000
+   },
+   "2002": {
+    "count": 5,
+    "median": 550000
+   },
+   "2003": {
+    "count": 8,
+    "median": 479000.0
+   },
+   "2004": {
+    "count": 6,
+    "median": 545000.0
+   },
+   "2005": {
+    "count": 6,
+    "median": 612500.0
+   },
+   "2006": {
+    "count": 6,
+    "median": 645000.0
+   },
+   "2007": {
+    "count": 3,
+    "median": 890000
+   },
+   "2008": {
+    "count": 2,
+    "median": 960000.0
+   },
+   "2009": {
+    "count": 4,
+    "median": 715000.0
+   },
+   "2010": {
+    "count": 2,
+    "median": 857500.0
+   },
+   "2011": {
+    "count": 5,
+    "median": 950000
+   },
+   "2012": {
+    "count": 4,
+    "median": 940500.0
+   },
+   "2013": {
+    "count": 3,
+    "median": 1200000
+   },
+   "2014": {
+    "count": 1,
+    "median": 1727009
+   },
+   "2015": {
+    "count": 5,
+    "median": 1750000
+   },
+   "2016": {
+    "count": 3,
+    "median": 1970000
+   },
+   "2017": {
+    "count": 8,
+    "median": 1605000.0
+   },
+   "2018": {
+    "count": 2,
+    "median": 1651500.0
+   },
+   "2019": {
+    "count": 1,
+    "median": 1590000
+   },
+   "2020": {
+    "count": 2,
+    "median": 1670000.0
+   },
+   "2021": {
+    "count": 5,
+    "median": 1670000
+   },
+   "2022": {
+    "count": 2,
+    "median": 1552500.0
+   },
+   "2023": {
+    "count": 3,
+    "median": 1600000
+   },
+   "2024": {
+    "count": 7,
+    "median": 1800000
+   },
+   "2025": {
+    "count": 2,
+    "median": 2075000.0
+   },
+   "2026": {
+    "count": 2,
+    "median": 1587500.0
+   }
+  },
+  "Speed House": {
+   "1995": {
+    "count": 5,
+    "median": 100000
+   },
+   "1996": {
+    "count": 3,
+    "median": 104000
+   },
+   "1997": {
+    "count": 11,
+    "median": 125000
+   },
+   "1998": {
+    "count": 12,
+    "median": 153500.0
+   },
+   "1999": {
+    "count": 16,
+    "median": 183500.0
+   },
+   "2000": {
+    "count": 5,
+    "median": 232500
+   },
+   "2001": {
+    "count": 8,
+    "median": 256500.0
+   },
+   "2002": {
+    "count": 8,
+    "median": 299000.0
+   },
+   "2003": {
+    "count": 7,
+    "median": 275000
+   },
+   "2004": {
+    "count": 8,
+    "median": 328250.0
+   },
+   "2005": {
+    "count": 8,
+    "median": 335000.0
+   },
+   "2006": {
+    "count": 5,
+    "median": 430000
+   },
+   "2007": {
+    "count": 5,
+    "median": 530000
+   },
+   "2009": {
+    "count": 4,
+    "median": 504000.0
+   },
+   "2010": {
+    "count": 4,
+    "median": 494999.5
+   },
+   "2011": {
+    "count": 5,
+    "median": 549950
+   },
+   "2012": {
+    "count": 4,
+    "median": 587500.0
+   },
+   "2013": {
+    "count": 3,
+    "median": 821000
+   },
+   "2014": {
+    "count": 5,
+    "median": 850000
+   },
+   "2015": {
+    "count": 4,
+    "median": 903500.0
+   },
+   "2016": {
+    "count": 7,
+    "median": 835000
+   },
+   "2017": {
+    "count": 6,
+    "median": 857475.0
+   },
+   "2018": {
+    "count": 4,
+    "median": 892500.0
+   },
+   "2019": {
+    "count": 4,
+    "median": 935000.0
+   },
+   "2020": {
+    "count": 2,
+    "median": 822500.0
+   },
+   "2021": {
+    "count": 5,
+    "median": 830000
+   },
+   "2022": {
+    "count": 1,
+    "median": 995000
+   },
+   "2023": {
+    "count": 3,
+    "median": 895000
+   },
+   "2024": {
+    "count": 3,
+    "median": 895000
+   },
+   "2025": {
+    "count": 5,
+    "median": 820000
+   },
+   "2026": {
+    "count": 1,
+    "median": 770000
+   }
+  },
+  "Thomas More House": {
+   "1995": {
+    "count": 11,
+    "median": 105000
+   },
+   "1996": {
+    "count": 10,
+    "median": 105000.0
+   },
+   "1997": {
+    "count": 15,
+    "median": 135000
+   },
+   "1998": {
+    "count": 8,
+    "median": 142500.0
+   },
+   "1999": {
+    "count": 18,
+    "median": 160000.0
+   },
+   "2000": {
+    "count": 9,
+    "median": 203000
+   },
+   "2001": {
+    "count": 11,
+    "median": 250000
+   },
+   "2002": {
+    "count": 9,
+    "median": 235000
+   },
+   "2003": {
+    "count": 10,
+    "median": 292475.0
+   },
+   "2004": {
+    "count": 14,
+    "median": 305000.0
+   },
+   "2005": {
+    "count": 10,
+    "median": 330000.0
+   },
+   "2006": {
+    "count": 8,
+    "median": 389500.0
+   },
+   "2007": {
+    "count": 8,
+    "median": 562500.0
+   },
+   "2008": {
+    "count": 3,
+    "median": 500000
+   },
+   "2009": {
+    "count": 10,
+    "median": 431500.0
+   },
+   "2010": {
+    "count": 6,
+    "median": 499974.5
+   },
+   "2011": {
+    "count": 9,
+    "median": 550000
+   },
+   "2012": {
+    "count": 5,
+    "median": 550000
+   },
+   "2013": {
+    "count": 9,
+    "median": 575000
+   },
+   "2014": {
+    "count": 8,
+    "median": 745000.0
+   },
+   "2015": {
+    "count": 5,
+    "median": 840000
+   },
+   "2016": {
+    "count": 3,
+    "median": 950000
+   },
+   "2017": {
+    "count": 10,
+    "median": 850000.0
+   },
+   "2018": {
+    "count": 9,
+    "median": 765000
+   },
+   "2019": {
+    "count": 7,
+    "median": 840000
+   },
+   "2020": {
+    "count": 5,
+    "median": 895000
+   },
+   "2021": {
+    "count": 3,
+    "median": 815000
+   },
+   "2022": {
+    "count": 6,
+    "median": 772500.0
+   },
+   "2023": {
+    "count": 9,
+    "median": 875000
+   },
+   "2024": {
+    "count": 8,
+    "median": 887500.0
+   },
+   "2025": {
+    "count": 7,
+    "median": 872000
+   }
+  },
+  "Willoughby House": {
+   "1995": {
+    "count": 6,
+    "median": 119000.0
+   },
+   "1996": {
+    "count": 7,
+    "median": 125000
+   },
+   "1997": {
+    "count": 10,
+    "median": 126500.0
+   },
+   "1998": {
+    "count": 10,
+    "median": 178750.0
+   },
+   "1999": {
+    "count": 16,
+    "median": 186250.0
+   },
+   "2000": {
+    "count": 8,
+    "median": 240000.0
+   },
+   "2001": {
+    "count": 9,
+    "median": 279500
+   },
+   "2002": {
+    "count": 9,
+    "median": 275000
+   },
+   "2003": {
+    "count": 12,
+    "median": 249475.0
+   },
+   "2004": {
+    "count": 7,
+    "median": 356473
+   },
+   "2005": {
+    "count": 9,
+    "median": 350000
+   },
+   "2006": {
+    "count": 6,
+    "median": 489750.0
+   },
+   "2007": {
+    "count": 6,
+    "median": 529166.5
+   },
+   "2008": {
+    "count": 1,
+    "median": 840000
+   },
+   "2009": {
+    "count": 6,
+    "median": 463750.0
+   },
+   "2010": {
+    "count": 6,
+    "median": 457500.0
+   },
+   "2011": {
+    "count": 6,
+    "median": 585000.0
+   },
+   "2012": {
+    "count": 4,
+    "median": 607202.0
+   },
+   "2013": {
+    "count": 4,
+    "median": 650379.0
+   },
+   "2014": {
+    "count": 5,
+    "median": 870000
+   },
+   "2015": {
+    "count": 4,
+    "median": 940000.0
+   },
+   "2016": {
+    "count": 4,
+    "median": 820000.0
+   },
+   "2017": {
+    "count": 6,
+    "median": 945000.0
+   },
+   "2018": {
+    "count": 1,
+    "median": 1180000
+   },
+   "2019": {
+    "count": 2,
+    "median": 700000.0
+   },
+   "2020": {
+    "count": 6,
+    "median": 786250.0
+   },
+   "2021": {
+    "count": 3,
+    "median": 710000
+   },
+   "2022": {
+    "count": 6,
+    "median": 752500.0
+   },
+   "2023": {
+    "count": 5,
+    "median": 680000
+   },
+   "2024": {
+    "count": 4,
+    "median": 825000.0
+   },
+   "2025": {
+    "count": 4,
+    "median": 787500.0
+   },
+   "2026": {
+    "count": 3,
+    "median": 825000
+   }
+  },
+  "other": {
+   "1995": {
+    "count": 6,
+    "median": 252250.0
+   },
+   "1996": {
+    "count": 5,
+    "median": 193000
+   },
+   "1997": {
+    "count": 74,
+    "median": 164681.0
+   },
+   "1998": {
+    "count": 21,
+    "median": 170000
+   },
+   "1999": {
+    "count": 13,
+    "median": 185250
+   },
+   "2000": {
+    "count": 15,
+    "median": 235000
+   },
+   "2001": {
+    "count": 10,
+    "median": 247500.0
+   },
+   "2002": {
+    "count": 18,
+    "median": 277250.0
+   },
+   "2003": {
+    "count": 15,
+    "median": 300000
+   },
+   "2004": {
+    "count": 12,
+    "median": 286250.0
+   },
+   "2005": {
+    "count": 4,
+    "median": 288000.0
+   },
+   "2006": {
+    "count": 7,
+    "median": 380000
+   },
+   "2007": {
+    "count": 6,
+    "median": 447500.0
+   },
+   "2008": {
+    "count": 2,
+    "median": 559625.0
+   },
+   "2009": {
+    "count": 5,
+    "median": 460000
+   },
+   "2010": {
+    "count": 49,
+    "median": 527500
+   },
+   "2011": {
+    "count": 30,
+    "median": 490000.0
+   },
+   "2012": {
+    "count": 5,
+    "median": 405000
+   },
+   "2013": {
+    "count": 5,
+    "median": 1590000
+   },
+   "2014": {
+    "count": 13,
+    "median": 575000
+   },
+   "2015": {
+    "count": 7,
+    "median": 735000
+   },
+   "2016": {
+    "count": 5,
+    "median": 690000
+   },
+   "2017": {
+    "count": 69,
+    "median": 771000
+   },
+   "2018": {
+    "count": 19,
+    "median": 740000
+   },
+   "2019": {
+    "count": 4,
+    "median": 709500.0
+   },
+   "2020": {
+    "count": 8,
+    "median": 717500.0
+   },
+   "2021": {
+    "count": 6,
+    "median": 642500.0
+   },
+   "2022": {
+    "count": 6,
+    "median": 567000.0
+   },
+   "2023": {
+    "count": 11,
+    "median": 1850000
+   },
+   "2024": {
+    "count": 7,
+    "median": 660000
+   },
+   "2025": {
+    "count": 11,
+    "median": 695000
+   },
+   "2026": {
+    "count": 3,
+    "median": 510000
+   }
+  }
+ },
+ "top10": [
+  {
+   "date": "2017-03-01",
+   "price": 29160447,
+   "paon": "BLAKE TOWER, 2",
+   "saon": "FLAT 114",
+   "street": "FANN STREET",
+   "postcode": "EC2Y 8AF",
+   "property_type": "otherPropertyType",
+   "tenure": "leasehold",
+   "new_build": "false",
+   "block": "other"
+  },
+  {
+   "date": "2023-05-09",
+   "price": 28500000,
+   "paon": "MURRAY HOUSE",
+   "saon": "ROOFTOP INSTALLATION",
+   "street": "BEECH STREET",
+   "postcode": "EC2Y 8AD",
+   "property_type": "otherPropertyType",
+   "tenure": "freehold",
+   "new_build": "false",
+   "block": "other"
+  },
+  {
+   "date": "2017-04-20",
+   "price": 3700000,
+   "paon": "BLAKE TOWER, 2",
+   "saon": "FLAT 161",
+   "street": "FANN STREET",
+   "postcode": "EC2Y 8AF",
+   "property_type": "flat-maisonette",
+   "tenure": "leasehold",
+   "new_build": "true",
+   "block": "other"
+  },
+  {
+   "date": "2023-06-14",
+   "price": 3400000,
+   "paon": "CROMWELL TOWER",
+   "saon": "FLAT 372",
+   "street": "BARBICAN",
+   "postcode": "EC2Y 8NB",
+   "property_type": "flat-maisonette",
+   "tenure": "leasehold",
+   "new_build": "false",
+   "block": "Cromwell Tower"
+  },
+  {
+   "date": "2017-11-30",
+   "price": 3350000,
+   "paon": "LAUDERDALE TOWER",
+   "saon": "FLAT 392",
+   "street": "BARBICAN",
+   "postcode": "EC2Y 8NA",
+   "property_type": "flat-maisonette",
+   "tenure": "leasehold",
+   "new_build": "false",
+   "block": "Lauderdale Tower"
+  },
+  {
+   "date": "2025-08-14",
+   "price": 3200000,
+   "paon": "6",
+   "saon": "",
+   "street": "WALLSIDE",
+   "postcode": "EC2Y 8BH",
+   "property_type": "flat-maisonette",
+   "tenure": "freehold",
+   "new_build": "false",
+   "block": "other"
+  },
+  {
+   "date": "2018-04-27",
+   "price": 3015000,
+   "paon": "BLAKE TOWER, 2",
+   "saon": "FLAT 162",
+   "street": "FANN STREET",
+   "postcode": "EC2Y 8AF",
+   "property_type": "flat-maisonette",
+   "tenure": "leasehold",
+   "new_build": "true",
+   "block": "other"
+  },
+  {
+   "date": "2021-06-23",
+   "price": 2950000,
+   "paon": "14",
+   "saon": "",
+   "street": "WALLSIDE",
+   "postcode": "EC2Y 8BH",
+   "property_type": "flat-maisonette",
+   "tenure": "freehold",
+   "new_build": "false",
+   "block": "other"
+  },
+  {
+   "date": "2021-09-10",
+   "price": 2850000,
+   "paon": "8",
+   "saon": "",
+   "street": "WALLSIDE",
+   "postcode": "EC2Y 8BH",
+   "property_type": "terraced",
+   "tenure": "freehold",
+   "new_build": "false",
+   "block": "other"
+  },
+  {
+   "date": "2025-01-27",
+   "price": 2800000,
+   "paon": "CROMWELL TOWER",
+   "saon": "FLAT M3",
+   "street": "BARBICAN",
+   "postcode": "EC2Y 8DD",
+   "property_type": "flat-maisonette",
+   "tenure": "leasehold",
+   "new_build": "false",
+   "block": "Cromwell Tower"
+  }
+ ]
+}
