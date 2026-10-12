@@ -303,11 +303,11 @@ ${editorialPages.blockExtras(name)}
     return page({ title: `${name} — Barbican Estate`, depth: 2, active: name, section: 'blocks', body, hero: heroImg(r.photos?.[0], '') });
   }
 
-  function card(d) {
+  function card(d, market = false) {
     const p = price(d);
     const type = R.listing_types[String(d.property_id)];
     const beds = Number(d.bedrooms) === 0 ? 'Studio' : `${d.bedrooms} bed`;
-    return `<a class="card${live(d) ? '' : ' off'}" href="../${d.property_id}/" data-block="${esc(building(d))}" data-beds="${Number(d.bedrooms)}" data-live="${live(d) ? 1 : 0}" data-price="${num(d.price_value)}">
+    return `<a class="card${live(d) ? '' : ' off'}"${live(d) || !market ? '' : ' hidden'} href="../${d.property_id}/" data-block="${esc(building(d))}" data-beds="${Number(d.bedrooms)}" data-live="${live(d) ? 1 : 0}" data-price="${num(d.price_value)}">
 ${d.photos[0] ? `<img src="${esc(resize(d.photos[0], '1200x'))}" alt="" loading="lazy">` : ''}
 ${live(d) ? '' : `<span class="tag">${up(d.status)}</span>`}
 <div class="t">${up(building(d))}</div>
@@ -331,7 +331,7 @@ ${live(d) ? '' : `<span class="tag">${up(d.status)}</span>`}
   <div class="grp" data-k="sort"><button class="btn" data-v="desc">£ HIGH</button><button class="btn" data-v="asc">£ LOW</button></div>
 </div>
 <div class="cards" id="files">
-${here.map(card).join('\n')}
+${here.map((d) => card(d, true)).join('\n')}
 </div>
 <div class="empty" id="empty" hidden>Nothing matches. Try incl. ${rent ? 'let' : 'sold'}.</div>
 <button class="btn more" id="more" hidden>VIEW ${rent ? 'LET' : 'SOLD'} FLATS &gt;</button>
@@ -343,26 +343,9 @@ ${here.map(card).join('\n')}
 const ROWS = ${JSON.stringify(rowsData)};
 const ESTATE = ${JSON.stringify(ESTATE)};
 const S = { st: 'live', beds: 'any', sort: 'desc', block: new URLSearchParams(location.search).get('block') };
-const map = L.map('map', { zoomControl: false, scrollWheelZoom: false, zoomSnap: 0.25 }).setView([51.5195, -0.0945], 17);
-L.control.zoom({ position: 'bottomright' }).addTo(map);
-map.attributionControl.setPrefix('').addAttribution('© OpenStreetMap contributors');
-const style = { road: { color: '#e6e6e6', weight: 6, opacity: 1 }, walk: { color: '#d9d9d9', weight: 1, dashArray: '2 3' },
-  green: { fillColor: '#f1f1f1', weight: 0, fillOpacity: 1 }, water: { fillColor: '#e4e4e4', weight: 0, fillOpacity: 1 },
-  landmark: { fillColor: '#ffffff', color: '#b5b5b5', weight: 0.8, fillOpacity: 1 } };
-const order = { road: 0, walk: 1, green: 2, water: 3, landmark: 4, block: 5 };
-ESTATE.features.sort((a, b) => order[a.properties.kind] - order[b.properties.kind]);
-const blockLayers = {};
-L.geoJSON(ESTATE, {
-  style: (f) => style[f.properties.kind] || { fillColor: '#d4d4d4', color: '#a8a8a8', weight: 0.6, fillOpacity: 1 },
-  onEachFeature: (f, layer) => { if (f.properties.kind === 'block') { (blockLayers[f.properties.name] ||= []).push(layer); layer.on('click', () => pick(f.properties.name, true)); } },
-}).addTo(map);
-const area = (b) => (b.getNorth() - b.getSouth()) * (b.getEast() - b.getWest());
-const centre = {};
-for (const [n, ls] of Object.entries(blockLayers)) centre[n] = ls.map((l) => l.getBounds()).sort((a, b) => area(b) - area(a))[0].getCenter();
-const label = (n, at, dark) => L.tooltip({ permanent: true, direction: 'center', className: 'lbl' + (dark ? ' dark' : ''), offset: [0, 10] })
-  .setLatLng(at).setContent(n.replace(/ (House|Court|Tower|Crescent|Mews|Building)$/, '<br>$1'));
-const marks = L.layerGroup().addTo(map);
 const files = [...document.querySelectorAll('#files .card')];
+// The map is extra: if Leaflet fails to load, the filters and cards still work.
+const M = typeof L === 'undefined' ? null : drawEstate();
 
 function render() {
   document.querySelectorAll('.grp').forEach((g) => g.querySelectorAll('.btn').forEach((b) => b.classList.toggle('on', S[g.dataset.k] === b.dataset.v)));
@@ -377,19 +360,7 @@ function render() {
   // Under the available flats: a way into the let/sold ones the filter hides.
   document.getElementById('more').hidden = S.st !== 'live' || !files.some((el) => el.dataset.live === '0');
   document.getElementById('blk').value = S.block || '';
-  marks.clearLayers();
-  const by = {};
-  pool.forEach((el) => (by[el.dataset.block] = true));
-  for (const [n, ls] of Object.entries(blockLayers)) {
-    label(n, centre[n], by[n]).addTo(marks);
-    ls.forEach((l) => l.setStyle({ fillColor: n === S.block ? '#ffffff' : by[n] ? '#111111' : '#d4d4d4', color: by[n] || n === S.block ? '#111111' : '#a8a8a8', weight: n === S.block ? 2 : 0.6 }));
-  }
-  // Listings outside a mapped block (e.g. the Cobalt Building) get a small square.
-  for (const n of Object.keys(by).filter((n) => !centre[n])) {
-    const r = ROWS.find((x) => x.block === n);
-    L.marker([r.lat, r.lng], { icon: L.divIcon({ className: '', html: '<span class="dot' + (n === S.block ? ' sel' : '') + '"></span>', iconSize: [0, 0] }), title: n }).on('click', () => pick(n, true)).addTo(marks);
-    label(n, [r.lat, r.lng], true).addTo(marks);
-  }
+  if (M) M.shade(pool);
 }
 function pick(n, scroll) {
   S.block = S.block === n ? null : n;
@@ -397,12 +368,52 @@ function pick(n, scroll) {
   render();
   if (scroll) document.querySelector('.controls').scrollIntoView({ behavior: 'smooth' });
 }
+
+function drawEstate() {
+  const map = L.map('map', { zoomControl: false, scrollWheelZoom: false, zoomSnap: 0.25 }).setView([51.5195, -0.0945], 17);
+  L.control.zoom({ position: 'bottomright' }).addTo(map);
+  map.attributionControl.setPrefix('').addAttribution('© OpenStreetMap contributors');
+  const style = { road: { color: '#e6e6e6', weight: 6, opacity: 1 }, walk: { color: '#d9d9d9', weight: 1, dashArray: '2 3' },
+    green: { fillColor: '#f1f1f1', weight: 0, fillOpacity: 1 }, water: { fillColor: '#e4e4e4', weight: 0, fillOpacity: 1 },
+    landmark: { fillColor: '#ffffff', color: '#b5b5b5', weight: 0.8, fillOpacity: 1 } };
+  const order = { road: 0, walk: 1, green: 2, water: 3, landmark: 4, block: 5 };
+  ESTATE.features.sort((a, b) => order[a.properties.kind] - order[b.properties.kind]);
+  const blockLayers = {};
+  L.geoJSON(ESTATE, {
+    style: (f) => style[f.properties.kind] || { fillColor: '#d4d4d4', color: '#a8a8a8', weight: 0.6, fillOpacity: 1 },
+    onEachFeature: (f, layer) => { if (f.properties.kind === 'block') { (blockLayers[f.properties.name] ||= []).push(layer); layer.on('click', () => pick(f.properties.name, true)); } },
+  }).addTo(map);
+  const area = (b) => (b.getNorth() - b.getSouth()) * (b.getEast() - b.getWest());
+  const centre = {};
+  for (const [n, ls] of Object.entries(blockLayers)) centre[n] = ls.map((l) => l.getBounds()).sort((a, b) => area(b) - area(a))[0].getCenter();
+  const label = (n, at, dark) => L.tooltip({ permanent: true, direction: 'center', className: 'lbl' + (dark ? ' dark' : ''), offset: [0, 10] })
+    .setLatLng(at).setContent(n.replace(/ (House|Court|Tower|Crescent|Mews|Building)$/, '<br>$1'));
+  const marks = L.layerGroup().addTo(map);
+  map.fitBounds(L.featureGroup(Object.values(blockLayers).flat()).getBounds(), { padding: [12, 12] });
+  map.setMaxBounds(map.getBounds().pad(0.6));
+  return {
+    shade(pool) {
+      marks.clearLayers();
+      const by = {};
+      pool.forEach((el) => (by[el.dataset.block] = true));
+      for (const [n, ls] of Object.entries(blockLayers)) {
+        label(n, centre[n], by[n]).addTo(marks);
+        ls.forEach((l) => l.setStyle({ fillColor: n === S.block ? '#ffffff' : by[n] ? '#111111' : '#d4d4d4', color: by[n] || n === S.block ? '#111111' : '#a8a8a8', weight: n === S.block ? 2 : 0.6 }));
+      }
+      // Listings outside a mapped block (e.g. the Cobalt Building) get a small square.
+      for (const n of Object.keys(by).filter((n) => !centre[n])) {
+        const r = ROWS.find((x) => x.block === n);
+        L.marker([r.lat, r.lng], { icon: L.divIcon({ className: '', html: '<span class="dot' + (n === S.block ? ' sel' : '') + '"></span>', iconSize: [0, 0] }), title: n }).on('click', () => pick(n, true)).addTo(marks);
+        label(n, [r.lat, r.lng], true).addTo(marks);
+      }
+    },
+  };
+}
+
 document.getElementById('blk').onchange = (e) => { S.block = null; pick(e.target.value || null); };
 document.getElementById('more').onclick = () => { S.st = 'all'; render(); document.querySelector('.card.off:not([hidden])')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
 document.querySelectorAll('.grp').forEach((g) => (g.onclick = (e) => { const v = e.target.dataset.v; if (v) { S[g.dataset.k] = v; render(); } }));
 render();
-map.fitBounds(L.featureGroup(Object.values(blockLayers).flat()).getBounds(), { padding: [12, 12] });
-map.setMaxBounds(map.getBounds().pad(0.6));
 </script>`;
     return page({ title: `Barbican Estate — ${rent ? 'to let' : 'for sale'}`, depth: 1, section: channel, body, head, sidebar: false });
   }
