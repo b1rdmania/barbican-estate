@@ -95,6 +95,7 @@ const THEME = `
   .card .m { display: flex; justify-content: space-between; margin-top: 0.9rem; padding-top: 0.5rem; border-top: 1px solid var(--ink); text-transform: uppercase; }
   .card.off { opacity: 0.45; }
   .empty { font: 700 22px var(--sans); text-transform: uppercase; }
+  .btn.more { display: block; width: 100%; margin: 0 0 3rem; padding: 1.25rem; font-size: 18px; }
 
   #map { height: 420px; border: 1px solid var(--ink); background: var(--paper); cursor: crosshair; }
   .leaflet-container { font-family: var(--sans); background: var(--paper); }
@@ -342,6 +343,7 @@ ${live(d) ? '' : `<span class="tag">${up(d.status)}</span>`}
 ${here.map(card).join('\n')}
 </div>
 <div class="empty" id="empty" hidden>Nothing matches. Try incl. ${rent ? 'let' : 'sold'}.</div>
+<button class="btn more" id="more" hidden>VIEW ${rent ? 'LET' : 'SOLD'} FLATS &gt;</button>
 <div>
 <span class="section-title">The estate // shaded blocks have flats ${rent ? 'to let' : 'for sale'}</span>
 <div id="map" style="margin-top:1rem"></div>
@@ -381,6 +383,8 @@ function render() {
   files.forEach((el) => (el.hidden = !shown.includes(el)));
   shown.sort((a, b) => (S.sort === 'asc' ? 1 : -1) * (a.dataset.price - b.dataset.price)).forEach((el) => el.parentNode.appendChild(el));
   document.getElementById('empty').hidden = shown.length > 0;
+  // Under the available flats: a way into the let/sold ones the filter hides.
+  document.getElementById('more').hidden = S.st !== 'live' || !files.some((el) => el.dataset.live === '0');
   document.getElementById('blk').value = S.block || '';
   marks.clearLayers();
   const by = {};
@@ -403,6 +407,7 @@ function pick(n, scroll) {
   if (scroll) document.querySelector('.controls').scrollIntoView({ behavior: 'smooth' });
 }
 document.getElementById('blk').onchange = (e) => { S.block = null; pick(e.target.value || null); };
+document.getElementById('more').onclick = () => { S.st = 'all'; render(); document.querySelector('.card.off:not([hidden])')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
 document.querySelectorAll('.grp').forEach((g) => (g.onclick = (e) => { const v = e.target.dataset.v; if (v) { S[g.dataset.k] = v; render(); } }));
 render();
 map.fitBounds(L.featureGroup(Object.values(blockLayers).flat()).getBounds(), { padding: [12, 12] });
