@@ -181,6 +181,8 @@ const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g
 const pad = (n) => String(n).padStart(2, '0');
 const money = (n) => '£' + Math.round(n).toLocaleString('en-GB');
 const resize = (u, size) => 'https:' + u.replace(/^https?:/, '').replace(/\/\d+x\d*\//, `/${size}/`);
+// Data inlined into <script>: escape '<' so text can never close the tag.
+const json = (v) => JSON.stringify(v).replace(/</g, '\\u003c');
 const num = (v) => Number(String(v).replace(/[^\d.]/g, '')) || 0;
 
 const GROUPS = [
@@ -194,13 +196,14 @@ const SECTIONS = [['explore', 'HISTORY'], ['sales', 'SALES'], ['lettings', 'LETT
 const EXPLORE_NAV = [['explore', '', 'Overview'], ['history', 'history/', 'The story'], ['blocks', 'blocks/', 'The estate'], ['inside', 'inside/', 'Inside the flats'], ['life', 'life/', 'Life here'], ['watch', 'watch/', 'Watch']];
 // Absolute base for share-card URLs (Telegram and others need a full URL).
 const SITE = 'https://barbican.estate/';
+const DESCRIPTION = 'The Barbican Estate in the City of London: its history, its blocks and flat types, and every flat for sale or to let.';
 
 export function renderArchive({ flats, building, split, price, live, isBarbican }) {
   const listings = flats.filter(isBarbican);
   const inBlock = (name) => listings.filter((d) => building(d) === name);
   const credits = new Map(); // every Commons photo shown, for the credits page
 
-  const page = ({ title, depth, active, section, body, head = '', sidebar = true, hero = '', image = '', share = null, editorial = '', route = null }) => {
+  const page = ({ title, depth, active, section, body, head = '', sidebar = true, hero = '', image = '', share = null, editorial = '', route = null, description = '' }) => {
     const root = '../'.repeat(depth);
     const link = (name) => `<li><a href="${root}blocks/${slug(name)}/"${active === name ? ' class="active"' : ''}>${up(name)}</a></li>`;
     return `<!doctype html><html lang="en"><head><meta charset="UTF-8">
@@ -208,6 +211,7 @@ export function renderArchive({ flats, building, split, price, live, isBarbican 
 <meta name="theme-color" content="#ffffff">
 <title>${esc(title)}</title>
 ${route !== null ? `<link rel="canonical" href="${SITE}${route ? route + '/' : ''}">` : ''}
+<meta name="description" content="${esc(description || DESCRIPTION)}">
 <meta property="og:title" content="${esc(share?.title || 'BARBICAN ESTATE')}">
 <meta property="og:description" content="${esc(share?.description || 'HISTORY / SALES / LETTINGS')}">
 <meta property="og:type" content="website">
@@ -300,14 +304,15 @@ ${editorialPages.blockExtras(name)}
   <a class="btn" href="../../lettings/?block=${encodeURIComponent(name)}">TO LET IN ${up(name)}</a>
   <a class="btn" href="../../sales/?block=${encodeURIComponent(name)}">FOR SALE IN ${up(name)}</a>
 </div>`;
-    return page({ title: `${name} — Barbican Estate`, depth: 2, active: name, section: 'blocks', body, hero: heroImg(r.photos?.[0], '') });
+    return page({ title: `${name} — Barbican Estate`, depth: 2, active: name, section: 'blocks', body, hero: heroImg(r.photos?.[0], ''), route: `blocks/${slug(name)}`,
+      description: c.lede ? `${name}, Barbican Estate. ${c.lede}` : `${name} on the Barbican Estate: history, flat types and flats for sale or to let.` });
   }
 
-  function card(d) {
+  function card(d, market = false) {
     const p = price(d);
     const type = R.listing_types[String(d.property_id)];
     const beds = Number(d.bedrooms) === 0 ? 'Studio' : `${d.bedrooms} bed`;
-    return `<a class="card${live(d) ? '' : ' off'}" href="../${d.property_id}/" data-block="${esc(building(d))}" data-beds="${Number(d.bedrooms)}" data-live="${live(d) ? 1 : 0}" data-price="${num(d.price_value)}">
+    return `<a class="card${live(d) ? '' : ' off'}"${live(d) || !market ? '' : ' hidden'} href="../${d.property_id}/" data-block="${esc(building(d))}" data-beds="${Number(d.bedrooms)}" data-live="${live(d) ? 1 : 0}" data-price="${num(d.price_value)}">
 ${d.photos[0] ? `<img src="${esc(resize(d.photos[0], '1200x'))}" alt="" loading="lazy">` : ''}
 ${live(d) ? '' : `<span class="tag">${up(d.status)}</span>`}
 <div class="t">${up(building(d))}</div>
@@ -331,7 +336,7 @@ ${live(d) ? '' : `<span class="tag">${up(d.status)}</span>`}
   <div class="grp" data-k="sort"><button class="btn" data-v="desc">£ HIGH</button><button class="btn" data-v="asc">£ LOW</button></div>
 </div>
 <div class="cards" id="files">
-${here.map(card).join('\n')}
+${here.map((d) => card(d, true)).join('\n')}
 </div>
 <div class="empty" id="empty" hidden>Nothing matches. Try incl. ${rent ? 'let' : 'sold'}.</div>
 <button class="btn more" id="more" hidden>VIEW ${rent ? 'LET' : 'SOLD'} FLATS &gt;</button>
@@ -340,29 +345,12 @@ ${here.map(card).join('\n')}
 <div id="map" style="margin-top:1rem"></div>
 </div>
 <script>
-const ROWS = ${JSON.stringify(rowsData)};
-const ESTATE = ${JSON.stringify(ESTATE)};
+const ROWS = ${json(rowsData)};
+const ESTATE = ${json(ESTATE)};
 const S = { st: 'live', beds: 'any', sort: 'desc', block: new URLSearchParams(location.search).get('block') };
-const map = L.map('map', { zoomControl: false, scrollWheelZoom: false, zoomSnap: 0.25 }).setView([51.5195, -0.0945], 17);
-L.control.zoom({ position: 'bottomright' }).addTo(map);
-map.attributionControl.setPrefix('').addAttribution('© OpenStreetMap contributors');
-const style = { road: { color: '#e6e6e6', weight: 6, opacity: 1 }, walk: { color: '#d9d9d9', weight: 1, dashArray: '2 3' },
-  green: { fillColor: '#f1f1f1', weight: 0, fillOpacity: 1 }, water: { fillColor: '#e4e4e4', weight: 0, fillOpacity: 1 },
-  landmark: { fillColor: '#ffffff', color: '#b5b5b5', weight: 0.8, fillOpacity: 1 } };
-const order = { road: 0, walk: 1, green: 2, water: 3, landmark: 4, block: 5 };
-ESTATE.features.sort((a, b) => order[a.properties.kind] - order[b.properties.kind]);
-const blockLayers = {};
-L.geoJSON(ESTATE, {
-  style: (f) => style[f.properties.kind] || { fillColor: '#d4d4d4', color: '#a8a8a8', weight: 0.6, fillOpacity: 1 },
-  onEachFeature: (f, layer) => { if (f.properties.kind === 'block') { (blockLayers[f.properties.name] ||= []).push(layer); layer.on('click', () => pick(f.properties.name, true)); } },
-}).addTo(map);
-const area = (b) => (b.getNorth() - b.getSouth()) * (b.getEast() - b.getWest());
-const centre = {};
-for (const [n, ls] of Object.entries(blockLayers)) centre[n] = ls.map((l) => l.getBounds()).sort((a, b) => area(b) - area(a))[0].getCenter();
-const label = (n, at, dark) => L.tooltip({ permanent: true, direction: 'center', className: 'lbl' + (dark ? ' dark' : ''), offset: [0, 10] })
-  .setLatLng(at).setContent(n.replace(/ (House|Court|Tower|Crescent|Mews|Building)$/, '<br>$1'));
-const marks = L.layerGroup().addTo(map);
 const files = [...document.querySelectorAll('#files .card')];
+// The map is extra: if Leaflet fails to load, the filters and cards still work.
+const M = typeof L === 'undefined' ? null : drawEstate();
 
 function render() {
   document.querySelectorAll('.grp').forEach((g) => g.querySelectorAll('.btn').forEach((b) => b.classList.toggle('on', S[g.dataset.k] === b.dataset.v)));
@@ -377,19 +365,7 @@ function render() {
   // Under the available flats: a way into the let/sold ones the filter hides.
   document.getElementById('more').hidden = S.st !== 'live' || !files.some((el) => el.dataset.live === '0');
   document.getElementById('blk').value = S.block || '';
-  marks.clearLayers();
-  const by = {};
-  pool.forEach((el) => (by[el.dataset.block] = true));
-  for (const [n, ls] of Object.entries(blockLayers)) {
-    label(n, centre[n], by[n]).addTo(marks);
-    ls.forEach((l) => l.setStyle({ fillColor: n === S.block ? '#ffffff' : by[n] ? '#111111' : '#d4d4d4', color: by[n] || n === S.block ? '#111111' : '#a8a8a8', weight: n === S.block ? 2 : 0.6 }));
-  }
-  // Listings outside a mapped block (e.g. the Cobalt Building) get a small square.
-  for (const n of Object.keys(by).filter((n) => !centre[n])) {
-    const r = ROWS.find((x) => x.block === n);
-    L.marker([r.lat, r.lng], { icon: L.divIcon({ className: '', html: '<span class="dot' + (n === S.block ? ' sel' : '') + '"></span>', iconSize: [0, 0] }), title: n }).on('click', () => pick(n, true)).addTo(marks);
-    label(n, [r.lat, r.lng], true).addTo(marks);
-  }
+  if (M) M.shade(pool);
 }
 function pick(n, scroll) {
   S.block = S.block === n ? null : n;
@@ -397,14 +373,55 @@ function pick(n, scroll) {
   render();
   if (scroll) document.querySelector('.controls').scrollIntoView({ behavior: 'smooth' });
 }
+
+function drawEstate() {
+  const map = L.map('map', { zoomControl: false, scrollWheelZoom: false, zoomSnap: 0.25 }).setView([51.5195, -0.0945], 17);
+  L.control.zoom({ position: 'bottomright' }).addTo(map);
+  map.attributionControl.setPrefix('').addAttribution('© OpenStreetMap contributors');
+  const style = { road: { color: '#e6e6e6', weight: 6, opacity: 1 }, walk: { color: '#d9d9d9', weight: 1, dashArray: '2 3' },
+    green: { fillColor: '#f1f1f1', weight: 0, fillOpacity: 1 }, water: { fillColor: '#e4e4e4', weight: 0, fillOpacity: 1 },
+    landmark: { fillColor: '#ffffff', color: '#b5b5b5', weight: 0.8, fillOpacity: 1 } };
+  const order = { road: 0, walk: 1, green: 2, water: 3, landmark: 4, block: 5 };
+  ESTATE.features.sort((a, b) => order[a.properties.kind] - order[b.properties.kind]);
+  const blockLayers = {};
+  L.geoJSON(ESTATE, {
+    style: (f) => style[f.properties.kind] || { fillColor: '#d4d4d4', color: '#a8a8a8', weight: 0.6, fillOpacity: 1 },
+    onEachFeature: (f, layer) => { if (f.properties.kind === 'block') { (blockLayers[f.properties.name] ||= []).push(layer); layer.on('click', () => pick(f.properties.name, true)); } },
+  }).addTo(map);
+  const area = (b) => (b.getNorth() - b.getSouth()) * (b.getEast() - b.getWest());
+  const centre = {};
+  for (const [n, ls] of Object.entries(blockLayers)) centre[n] = ls.map((l) => l.getBounds()).sort((a, b) => area(b) - area(a))[0].getCenter();
+  const label = (n, at, dark) => L.tooltip({ permanent: true, direction: 'center', className: 'lbl' + (dark ? ' dark' : ''), offset: [0, 10] })
+    .setLatLng(at).setContent(n.replace(/ (House|Court|Tower|Crescent|Mews|Building)$/, '<br>$1'));
+  const marks = L.layerGroup().addTo(map);
+  map.fitBounds(L.featureGroup(Object.values(blockLayers).flat()).getBounds(), { padding: [12, 12] });
+  map.setMaxBounds(map.getBounds().pad(0.6));
+  return {
+    shade(pool) {
+      marks.clearLayers();
+      const by = {};
+      pool.forEach((el) => (by[el.dataset.block] = true));
+      for (const [n, ls] of Object.entries(blockLayers)) {
+        label(n, centre[n], by[n]).addTo(marks);
+        ls.forEach((l) => l.setStyle({ fillColor: n === S.block ? '#ffffff' : by[n] ? '#111111' : '#d4d4d4', color: by[n] || n === S.block ? '#111111' : '#a8a8a8', weight: n === S.block ? 2 : 0.6 }));
+      }
+      // Listings outside a mapped block (e.g. the Cobalt Building) get a small square.
+      for (const n of Object.keys(by).filter((n) => !centre[n])) {
+        const r = ROWS.find((x) => x.block === n);
+        L.marker([r.lat, r.lng], { icon: L.divIcon({ className: '', html: '<span class="dot' + (n === S.block ? ' sel' : '') + '"></span>', iconSize: [0, 0] }), title: n }).on('click', () => pick(n, true)).addTo(marks);
+        label(n, [r.lat, r.lng], true).addTo(marks);
+      }
+    },
+  };
+}
+
 document.getElementById('blk').onchange = (e) => { S.block = null; pick(e.target.value || null); };
 document.getElementById('more').onclick = () => { S.st = 'all'; render(); document.querySelector('.card.off:not([hidden])')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
 document.querySelectorAll('.grp').forEach((g) => (g.onclick = (e) => { const v = e.target.dataset.v; if (v) { S[g.dataset.k] = v; render(); } }));
 render();
-map.fitBounds(L.featureGroup(Object.values(blockLayers).flat()).getBounds(), { padding: [12, 12] });
-map.setMaxBounds(map.getBounds().pad(0.6));
 </script>`;
-    return page({ title: `Barbican Estate — ${rent ? 'to let' : 'for sale'}`, depth: 1, section: channel, body, head, sidebar: false });
+    return page({ title: `Barbican Estate flats ${rent ? 'to let' : 'for sale'}`, depth: 1, section: channel, body, head, sidebar: false, route: channel,
+      description: `Every Barbican Estate flat ${rent ? 'to let' : 'for sale'} from the estate's specialist agents, with a map of the blocks.` });
   }
 
   function flatPage(d) {
@@ -446,7 +463,7 @@ ${c ? `<a class="block-link" href="../blocks/${slug(name)}/"><b>About ${esc(name
 </div>
 <div class="lb"><button class="x" aria-label="Close">×</button><button class="p" aria-label="Previous">‹</button><img alt=""><button class="n" aria-label="Next">›</button></div>
 <script>
-const P = ${JSON.stringify(photos)}, lb = document.querySelector('.lb'), im = lb.querySelector('img'); let i = 0;
+const P = ${json(photos)}, lb = document.querySelector('.lb'), im = lb.querySelector('img'); let i = 0;
 const show = (n) => { i = (n + P.length) % P.length; im.src = P[i]; lb.classList.add('on'); };
 const hide = () => lb.classList.remove('on');
 document.querySelectorAll('img[data-i]').forEach((e) => (e.onclick = () => show(+e.dataset.i)));
@@ -455,7 +472,8 @@ lb.onclick = (e) => { if (e.target === lb) hide(); };
 addEventListener('keydown', (e) => { if (!lb.classList.contains('on')) return; if (e.key === 'Escape') hide(); if (e.key === 'ArrowLeft') show(i - 1); if (e.key === 'ArrowRight') show(i + 1); });
 </script>`;
     const hero = photos[0] ? `<img src="${esc(photos[0])}" data-i="0" alt="${esc(name)}" style="cursor:zoom-in">` : '';
-    return page({ title: `${name} — ${p.main}${p.unit ? ' ' + p.unit : ''} — Barbican Estate`, depth: 1, section: channel(d), body, sidebar: false, hero,
+    return page({ title: `${name} — ${p.main}${p.unit ? ' ' + p.unit : ''} — Barbican Estate`, depth: 1, section: channel(d), body, sidebar: false, hero, route: String(d.property_id),
+      description: `${Number(d.bedrooms) === 0 ? 'Studio' : d.bedrooms + '-bedroom'} flat ${rent ? 'to let' : 'for sale'} in ${name}, Barbican Estate. ${p.main}${p.unit ? ' ' + p.unit : ''}. ${d.status}.`,
       image: photos[0], share: { title: `${name.toUpperCase()} — ${p.main}${p.unit ? ' ' + p.unit.toUpperCase() : ''}`, description: `${Number(d.bedrooms) === 0 ? 'STUDIO' : d.bedrooms + ' BED'} ${rent ? 'TO LET' : 'FOR SALE'} // BARBICAN ESTATE` } });
   }
   const channel = (d) => (d.channel === 'sales' ? 'sales' : 'lettings');
@@ -464,7 +482,7 @@ addEventListener('keydown', (e) => { if (!lb.classList.contains('on')) return; i
     const body = `<span class="section-title">Photo credits</span>
 ${rows([...credits.values()].map((c) => [c.caption || 'Photo', `${c.author}, ${c.licence}. ${c.page}`]))}
 <p style="color:var(--faded-ink)">Photos of flats come from the agents' listings. Map data © OpenStreetMap contributors.</p>`;
-    return page({ title: 'Photo credits — Barbican Estate', depth: 1, section: '', body, sidebar: false });
+    return page({ title: 'Photo credits — Barbican Estate', depth: 1, section: '', body, sidebar: false, route: 'credits' });
   }
 
   const editorialPages = createEditorial({ page, R, HISTORY, BLOCKS, ESTATE, ALL, commons, listings, building, live, card, chart });
