@@ -1,0 +1,40 @@
+[
+  {
+    "slug": "first-years",
+    "title": "The first years",
+    "lede": "Residents describe life on the unfinished estate in 1972.",
+    "body": [
+      "The first residents moved into Speed House in 1969. Three years later, BBC Nationwide asked people what it was like to live here."
+    ],
+    "film": "living-here-in-1972",
+    "image": 8,
+    "blocks": [
+      "Speed House"
+    ],
+    "prompt": "moving-in"
+  },
+  {
+    "slug": "a-home-in-colour",
+    "title": "A home in colour",
+    "lede": "Inside Tom Morris’s Barbican flat.",
+    "body": [
+      "Design journalist Tom Morris shows us his home in this film by The Modern House and Farrow & Ball."
+    ],
+    "film": "tom-morris-at-home",
+    "image": 12,
+    "blocks": [],
+    "prompt": "original-detail"
+  },
+  {
+    "slug": "a-month-in-the-estate",
+    "title": "A month in the estate",
+    "lede": "Bêka and Lemoine meet the people who live and work here.",
+    "body": [
+      "Ila Bêka and Louise Lemoine spent a month filming at the Barbican for their documentary Barbicania. This is the trailer."
+    ],
+    "film": "barbicania",
+    "image": 18,
+    "blocks": [],
+    "prompt": "small-discovery"
+  }
+]

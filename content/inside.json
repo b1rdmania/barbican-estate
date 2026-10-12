@@ -1,0 +1,42 @@
+[
+  {
+    "type": "20",
+    "title": "One bedroom and a study",
+    "lede": "A one-bedroom layout with a separate study, in the north–south terrace blocks.",
+    "body": "The flat runs from the front of the building to the back. The rooms fit around the stairs and lift, next to a two-bedroom Type 21.",
+    "compare": "21",
+    "image": 8
+  },
+  {
+    "type": "21",
+    "title": "Two bedrooms",
+    "lede": "A two-bedroom flat that fits alongside Type 20.",
+    "body": "The second bedroom sits behind the stairwell. These flats run from front to back in Andrewes, Defoe, Speed and Thomas More houses.",
+    "compare": "20",
+    "image": 10
+  },
+  {
+    "type": "26",
+    "title": "Entrance through the living room",
+    "lede": "A one-bedroom flat in the east–west terraces.",
+    "body": "The front door opens from the shared corridor into the living area. Type 31 has a similar layout, but its entrance opens into a hall.",
+    "compare": "31",
+    "image": 15
+  },
+  {
+    "type": "31",
+    "title": "Entrance through a hall",
+    "lede": "A one-bedroom flat in Gilbert, Mountjoy and Seddon houses.",
+    "body": "The front door opens into a hall beside the bathroom. In Type 26, it opens straight into the living area.",
+    "compare": "26",
+    "image": 5
+  },
+  {
+    "type": "35",
+    "title": "A penthouse on two floors",
+    "lede": "A three-bedroom penthouse arranged over two floors.",
+    "body": "The living room has a double-height ceiling. Stairs lead to a landing overlooking it, with bedrooms upstairs and a roof patio outside.",
+    "compare": "31",
+    "image": 11
+  }
+]

@@ -1,10 +1,10 @@
 # Barbican Estate
 
-A site about the Barbican Estate in the City of London. It has three sections:
+A site about the Barbican Estate in the City of London. Its main sections are History, Sales and Lettings:
 
 - **Lettings**: flats to rent on the estate.
 - **Sales**: flats for sale on the estate.
-- **History**: the story of the estate, its 21 blocks and its flat types.
+- **History**: history, the estate map, flat types, films and life on the estate.
 
 Live site: https://barbican.estate/
 
@@ -45,3 +45,5 @@ node build.mjs      # build site/ from data/ only
 | `osm.py` | Builds the estate map from OpenStreetMap data |
 
 See `HANDOVER.md` for design rules and open work.
+
+Editorial content and the contribution review workflow are documented in `content/EDITORIAL.md`. After building, run `node tests/editorial.mjs` for route and mobile interaction checks.

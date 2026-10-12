@@ -1,7 +1,7 @@
 # Barbican Estate site: handover (banked 2026-10-11)
 
 Live: https://barbican.estate/ on a Cloudflare Worker (`barbican-estate`, `wrangler.jsonc`, `worker/index.js`; www 301s to the bare domain). The old here.now address (mighty-raven-26kk) now only holds redirect pages to the same paths on barbican.estate.
-Three sections: Lettings, Sales, History. Root redirects to Lettings.
+Three main sections: History, Sales, Lettings. Root is the History landing page. History connects The story (`/history/`), The estate (`/blocks/`), Inside the flats (`/inside/`), Life here (`/life/`) and Watch (`/watch/`).
 
 ## Run it
 
@@ -46,6 +46,10 @@ Repo: https://github.com/b1rdmania/barbican-estate (public).
 2. **Design tightening.** Andy is doing a pass himself.
 3. **History page.** Work through the story and plates.
 4. **Flat types: another data pass.** Find historic diagrams (original City brochures, the 1959 report, London Metropolitan Archives, RIBA, Historic England's John Laing collection, Stefi Orazi's book). Floor areas per type: the public EPC register lists m² per flat, one postcode at a time. Barbican Living's plans are all rights reserved, so link, don't copy.
+
+## Editorial additions (2026-10-12)
+
+`editorial.mjs` uses the existing archive shell; `editorial.css` adds styles without changing `archive.css`. Six films and five flat-type guides are curated in `content/`. Read `content/EDITORIAL.md` for the contribution review workflow and sources. `node tests/editorial.mjs` checks the generated pages. The contribution page previews/downloads drafts; set a public inbox in `content/contribute.json` to enable email handoff. New contributions are never published automatically.
 
 ## Known gaps
 

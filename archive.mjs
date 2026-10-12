@@ -3,6 +3,8 @@
 // copied verbatim into archive.css; the theme (white, Helvetica) is overridden in page().
 // Called from build.mjs with the listings and its helpers.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { createEditorial, inside } from './editorial.mjs';
+const EDITORIAL_CSS = readFileSync('editorial.css', 'utf8');
 
 const CSS = readFileSync('archive.css', 'utf8');
 const R = JSON.parse(readFileSync('data/research.json', 'utf8'));
@@ -188,7 +190,8 @@ const GROUPS = [
   ['MEWS + HOUSES', ['Brandon Mews', 'Lambert Jones Mews', 'The Postern', 'Wallside']],
 ];
 const ALL = GROUPS.flatMap(([, names]) => names);
-const SECTIONS = [['lettings', 'LETTINGS'], ['sales', 'SALES'], ['blocks', 'HISTORY']];
+const SECTIONS = [['explore', 'HISTORY'], ['sales', 'SALES'], ['lettings', 'LETTINGS']];
+const EXPLORE_NAV = [['explore', '', 'Overview'], ['history', 'history/', 'The story'], ['blocks', 'blocks/', 'The estate'], ['inside', 'inside/', 'Inside the flats'], ['life', 'life/', 'Life here'], ['watch', 'watch/', 'Watch']];
 // Absolute base for share-card URLs (Telegram and others need a full URL).
 const SITE = 'https://barbican.estate/';
 
@@ -197,32 +200,35 @@ export function renderArchive({ flats, building, split, price, live, isBarbican 
   const inBlock = (name) => listings.filter((d) => building(d) === name);
   const credits = new Map(); // every Commons photo shown, for the credits page
 
-  const page = ({ title, depth, active, section, body, head = '', sidebar = true, hero = '', image = '', share = null }) => {
+  const page = ({ title, depth, active, section, body, head = '', sidebar = true, hero = '', image = '', share = null, editorial = '', route = null }) => {
     const root = '../'.repeat(depth);
     const link = (name) => `<li><a href="${root}blocks/${slug(name)}/"${active === name ? ' class="active"' : ''}>${up(name)}</a></li>`;
     return `<!doctype html><html lang="en"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#ffffff">
 <title>${esc(title)}</title>
+${route !== null ? `<link rel="canonical" href="${SITE}${route ? route + '/' : ''}">` : ''}
 <meta property="og:title" content="${esc(share?.title || 'BARBICAN ESTATE')}">
 <meta property="og:description" content="${esc(share?.description || 'HISTORY / SALES / LETTINGS')}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Barbican Estate">
 ${image ? `<meta property="og:image" content="${esc(image)}">` : `<meta property="og:image" content="${SITE}og.png">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">`}
 <meta name="twitter:card" content="summary_large_image">
-<style>${CSS}${THEME}</style>${head}</head><body>
+<style>${CSS}${THEME}${EDITORIAL_CSS}</style>${head}</head><body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 <div class="document-wrapper">
   <header>
     <div class="brand">
-      <h1><a href="${root}lettings/">BARBICAN ESTATE</a></h1>
-      <p>HISTORY ARCHIVE + SALE AND RENT LISTINGS</p>
+      <h1><a href="${root || './'}">BARBICAN ESTATE</a></h1>
+      <p>HISTORY / SALES / LETTINGS</p>
     </div>
   </header>
-  <nav class="sections">
-    ${SECTIONS.map(([key, label], i) => `<a href="${root}${key}/"${section === key ? ' class="on"' : ''}><span class="n">${pad(i + 1)}</span>${label}</a>`).join('\n    ')}
+  <nav class="sections" aria-label="Main navigation">
+    ${SECTIONS.map(([key, label], i) => `<a href="${key === 'explore' ? root || './' : root + key + '/'}"${(section === key || key === 'explore' && section === 'blocks') ? ' class="on" aria-current="page"' : ''}><span class="n">${pad(i + 1)}</span>${label}</a>`).join('\n    ')}
   </nav>
+  ${section === 'explore' || section === 'blocks' ? `<nav class="explore-nav" aria-label="History">${EXPLORE_NAV.map(([key, path, label]) => `<a href="${root + path || './'}"${(editorial || (section === 'blocks' ? 'blocks' : 'explore')) === key ? ' aria-current="page"' : ''}>${label}</a>`).join('')}</nav>` : ''}
   ${hero ? `<figure class="hero">${hero}</figure>` : ''}
-  <main${sidebar ? '' : ' style="grid-template-columns:1fr"'}>
+  <main id="main-content"${sidebar ? '' : ' style="grid-template-columns:1fr"'}>
     ${sidebar ? `<aside class="index">
       ${GROUPS.map(([t, names]) => `<div class="index-group"><span class="index-title">${t}</span><ul class="block-list">${names.map(link).join('')}</ul></div>`).join('\n      ')}
     </aside>` : ''}
@@ -246,6 +252,7 @@ ${body}
   // Commons photos go through here so the credits page lists each one.
   const commons = (img, caption) => { credits.set(img.url, { ...img, caption }); return img.url; };
   const heroImg = (img, caption) => img ? `<img src="${esc(commons(img, caption))}" alt="${esc(caption)}">${caption ? `<figcaption>${up(caption)}</figcaption>` : ''}` : '';
+  commons(R.history.images[2], 'Share image: roof plan (cropped)');
   const plates = (items) => items.length ? `<div class="plates">${items.map((p) => `<figure>${p.href ? `<a href="${esc(p.href)}">` : ''}<img src="${esc(p.url)}" alt="${esc(p.caption)}" loading="lazy">${p.href ? '</a>' : ''}<figcaption>${up(p.caption)}</figcaption></figure>`).join('')}</div>` : '';
   const fold = (title, inner) => inner ? `<details class="fold"><summary>${esc(title)}</summary><div class="body">${inner}</div></details>` : '';
   const rows = (pairs, cls = '') => `<dl class="rows${cls ? ' ' + cls : ''}">${pairs.map(([k, v]) => `<dt>${up(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>`;
@@ -268,23 +275,6 @@ ${i % 5 === 0 || (i === ys.length - 1 && i % 5 > 2) ? `<text x="${x.toFixed(1)}"
 <text x="0" y="${top - 2}">${money(max)}</text>${bars}</svg></div>`;
   }
 
-  function overview() {
-    const H = HISTORY, imgs = R.history.images;
-    const [hi, hc] = H.hero;
-    const body = `
-<p class="lede">${esc(H.intro)}</p>
-<div class="numbers">${H.numbers.map(([k, v]) => `<div><b>${esc(v)}</b><span>${esc(k)}</span></div>`).join('')}</div>
-${plates(H.plates.map(([i, c]) => ({ url: commons(imgs[i], c), caption: c })))}
-<div class="folds">
-${fold('The story', rows(H.story))}
-${fold('How it was built', rows(H.built))}
-${fold('The architects', rows(H.people.map(([n, d, t]) => [`${n} ${d}`, t])))}
-${fold('Things you might not know', rows(H.facts.map((f, i) => [pad(i + 1), f])))}
-${fold('What flats sell for', `<p class="lede" style="font-size:15px;margin-bottom:1.5rem">Median price paid each year across the estate, 1995 to 2026.</p>${chart(R.prices.by_year, 'Median sale price by year')}`)}
-</div>`;
-    return page({ title: 'Barbican Estate — history', depth: 1, active: 'overview', section: 'blocks', body, hero: heroImg(imgs[hi], hc) });
-  }
-
   function blockPage(name) {
     const c = BLOCKS[name] || {};
     const r = R.blocks[name] || {};
@@ -302,9 +292,10 @@ ${plates([...outside, ...inside])}
 <div class="numbers">${numbers.map(([k, v]) => `<div><b>${esc(v)}</b><span>${esc(k)}</span></div>`).join('')}</div>
 <dl class="prose">${prose.map(([k, v]) => `<dt>${up(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>
 <div class="folds">
-${types.length ? fold('Flat types', `<dl class="rows table">${types.map((t) => `<dt>${up(t.type)}</dt><dd>${esc(beds(t.beds))}</dd><dd>${esc(t.blocks[name])} flat${t.blocks[name] === 1 ? '' : 's'}</dd>`).join('')}</dl>`) : ''}
+${types.length ? fold('Flat types', `<dl class="rows table">${types.map((t) => `<dt><a href="${inside.some(x => x.type === t.type) ? `/inside/type-${t.type}/` : esc(t.source)}">${up(t.type)}</a></dt><dd>${esc(beds(t.beds))}</dd><dd>${esc(t.blocks[name])} flat${t.blocks[name] === 1 ? '' : 's'}</dd>`).join('')}</dl>`) : ''}
 ${fold('What flats sell for', chart(R.prices.by_block_year[name], `${name} median sale price by year`))}
 </div>
+${editorialPages.blockExtras(name)}
 <div class="actions">
   <a class="btn" href="../../lettings/?block=${encodeURIComponent(name)}">TO LET IN ${up(name)}</a>
   <a class="btn" href="../../sales/?block=${encodeURIComponent(name)}">FOR SALE IN ${up(name)}</a>
@@ -422,6 +413,7 @@ map.setMaxBounds(map.getBounds().pad(0.6));
     const p = price(d);
     const name = building(d);
     const type = R.listing_types[String(d.property_id)];
+    const typeGuide = inside.find(t => t.type === String(type));
     const rent = d.channel !== 'sales';
     const photos = d.photos.map((u) => resize(u, '1600x'));
     const c = BLOCKS[name];
@@ -445,6 +437,7 @@ ${d.floorplans.map((u) => `<figure class="plan"><img src="${esc(u)}" alt="Floorp
 <div class="folds">
 ${fold('Details', rows(details.length ? details : [['Status', d.status]]))}
 </div>
+${typeGuide ? `<a class="block-link" href="/inside/type-${typeGuide.type}/"><b>Inside type ${typeGuide.type} &gt;</b><span>${esc(typeGuide.lede)}</span></a>` : ''}
 ${c ? `<a class="block-link" href="../blocks/${slug(name)}/"><b>About ${esc(name)} &gt;</b><span>${esc(c.lede)}</span></a>` : ''}
 <div class="actions">
   <a class="btn" href="tel:${esc((d.contact_telephone || '').replace(/\s/g, ''))}">CALL ${up(d.agency_name)} ${esc(d.contact_telephone)}</a>
@@ -474,10 +467,14 @@ ${rows([...credits.values()].map((c) => [c.caption || 'Photo', `${c.author}, ${c
     return page({ title: 'Photo credits — Barbican Estate', depth: 1, section: '', body, sidebar: false });
   }
 
+  const editorialPages = createEditorial({ page, R, HISTORY, BLOCKS, ESTATE, ALL, commons, listings, building, live, card, chart });
+  for (const [path, html] of editorialPages.pages) {
+    mkdirSync(`site/${path}`, { recursive: true });
+    writeFileSync(`site/${path ? path + '/' : ''}index.html`, html);
+  }
   for (const d of flats) { mkdirSync(`site/${d.property_id}`, { recursive: true }); writeFileSync(`site/${d.property_id}/index.html`, flatPage(d)); }
   for (const ch of ['lettings', 'sales']) { mkdirSync(`site/${ch}`, { recursive: true }); writeFileSync(`site/${ch}/index.html`, marketPage(ch)); }
   mkdirSync('site/blocks', { recursive: true });
-  writeFileSync('site/blocks/index.html', overview());
   for (const name of ALL) {
     mkdirSync(`site/blocks/${slug(name)}`, { recursive: true });
     writeFileSync(`site/blocks/${slug(name)}/index.html`, blockPage(name));
@@ -485,5 +482,5 @@ ${rows([...credits.values()].map((c) => [c.caption || 'Photo', `${c.author}, ${c
   // Credits last, once every page has registered its photos.
   mkdirSync('site/credits', { recursive: true });
   writeFileSync('site/credits/index.html', creditsPage());
-  return ALL.length + 4 + flats.length;
+  return ALL.length + 3 + flats.length + editorialPages.pages.size;
 }

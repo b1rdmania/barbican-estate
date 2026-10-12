@@ -41,8 +41,6 @@ function building(d) {
 const live = (d) => !/let agreed|^let$|sold|under offer/i.test(d.status);
 const isBarbican = (d) => /^EC2Y 8/i.test(d.postcode || '') || /barbican/i.test(d.display_address);
 
-// The archive is the front door.
-const indexPage = () => '<!doctype html><meta http-equiv="refresh" content="0;url=lettings/"><a href="lettings/">Barbican Estate archive</a>';
 // The old map URL now lives on as the lettings page.
 const oldMapPage = () => '<!doctype html><script>location.replace("../lettings/" + location.search)</script><a href="../lettings/">Lettings</a>';
 
@@ -50,7 +48,6 @@ rmSync('site', { recursive: true, force: true });
 mkdirSync('site', { recursive: true });
 mkdirSync('site/barbican', { recursive: true });
 writeFileSync('site/barbican/index.html', oldMapPage());
-writeFileSync('site/index.html', indexPage());
 // Share card: a crop of CPB's 1966 roof plan (assets/roof-plan-1966.jpg, CC BY-SA 4.0), made with
 // magick roof-plan-1966.jpg -crop 1000x526+250+100 +repage -resize 1200x630! og.png
 copyFileSync('assets/og.png', 'site/og.png');
