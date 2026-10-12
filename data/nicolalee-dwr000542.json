@@ -1,0 +1,52 @@
+{
+  "property_id": "nicolalee-dwr000542",
+  "agency_name": "Nicola Lee",
+  "channel": "sales",
+  "status": "Sold",
+  "display_address": "Ben Jonson House, Barbican, London",
+  "road_name": "Ben Jonson House",
+  "postcode": "EC2Y 8DL",
+  "lat": 51.5208843,
+  "lng": -0.0940756,
+  "price": "£660,000",
+  "price_value": "660000",
+  "bedrooms": "1",
+  "bathrooms": "1",
+  "reception_rooms": "1",
+  "photos": [
+    "https://cdn.webdadi.net/Media/image/xl/0d3e97d1-c78c-4000-90ec-05c0187bc49c.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/da585768-277e-41be-b04a-a96637c5fb18.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/b0e61efd-d7ac-4e25-a559-3854d8dde69e.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/5fccd542-1c14-43d1-a8c0-9167fb79a420.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/3761bc44-3b7f-4ef6-ad40-8e2d32733d68.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/d9de2bc8-9d8e-481d-9d60-e8822069fbcb.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/f19859e9-863e-4121-991a-0d47796e260d.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/8f42f35b-ca8f-4002-a84a-65e63f06e42f.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/fa69af9e-f79c-4ab6-a51b-2325ad32dc8d.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/8891baf9-64df-4d21-87a8-b93aaf1fc8a3.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/a448ab35-b6e4-43a5-96ee-441716e7b07f.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/29539604-f316-4c76-80ef-2f3f7b3425a9.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/9fa89b4c-9ce2-4ec4-9459-55680a30e728.jpg"
+  ],
+  "floorplans": [
+    "https://cdn.webdadi.net/Media/image/xl/4b8f1247-8f35-4426-95de-2e99e839a71c.gif"
+  ],
+  "epcs": [],
+  "features": [
+    "Split Level One Bed Apartment",
+    "Located on the 2nd & 1st Floors",
+    "Dual Aspect",
+    "South Facing Reception",
+    "Underfloor Heating included in Service Charge",
+    "Lifts",
+    "Wooden Staircase",
+    "24 Porterage",
+    "Great Transport Links including Elizabeth Line",
+    "No Onward Chain"
+  ],
+  "description_html": "<p>Split level one bedroom apartment located on the 2nd and 1st floors, dual aspect. Full height width floor to ceiling glass sliding door/windows leading to a south facing balcony. A feature of the apartment is the wooden staircase leading down to the reception and dining kitchen area.  Underfloor heating included in the service charge. Lifts. Use of residents’ gardens. 24hr car park attendants can hold keys and receive packages. Car parking and bike storage by separate negotiation with the City of London. The Barbican Estate includes the Barbican Arts Centre, cinemas, art gallery, concert hall, theatre, restaurants, bars and cafes. Waitrose, Marks &amp; Spencer and Tesco are close at hand. It is perfectly located for the Elizabeth Line, with both Farringdon, (which has direct trains to both Heathrow and Gatwick), and Liverpool Street stations only a short walk away, also with close proximity to the various lines at underground stations Barbican, St. Paul’s, and Moorgate. No onward chain.<br>Service Charge: Estimated: £5,865 - 01/04/25 to 31/03/26.<br>Lease: Extended to 2196<br>Ground Rent: peppercorn</p>",
+  "contact_telephone": "020 3488 4330",
+  "source_url": "https://www.nicolalee.co.uk/property/dwr000542/ec2y/london/ben-jonson-house/apartment/1-bedroom",
+  "tenure": "Leasehold",
+  "fetched_at": "2026-10-12T10:30:58.496Z"
+}

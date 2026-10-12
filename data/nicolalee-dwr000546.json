@@ -1,0 +1,53 @@
+{
+  "property_id": "nicolalee-dwr000546",
+  "agency_name": "Nicola Lee",
+  "channel": "sales",
+  "status": "Sold",
+  "display_address": "Lauderdale Tower, Barbican, London",
+  "road_name": "Lauderdale Tower",
+  "postcode": "EC2Y 8BY",
+  "lat": 51.51968,
+  "lng": -0.0968146,
+  "price": "£1,650,000",
+  "price_value": "1650000",
+  "bedrooms": "4",
+  "bathrooms": "2",
+  "reception_rooms": "1",
+  "photos": [
+    "https://cdn.webdadi.net/Media/image/xl/e834988d-83d9-414e-b21d-291aa5d83704.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/04c8a603-f47e-48be-8f69-9ddebfc64426.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/dd35c051-cb0d-43cf-8448-7afb87f17b32.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/d2ebfadd-c7c2-43f1-bafc-3d080c27c0a6.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/eea8f881-e492-4ef6-83a5-3b60839ccd23.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/5df3b6e0-4581-498d-b782-60bf3c7c9fc7.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/0cdcfcbd-c77e-4070-ae20-68e200726f37.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/f55fa353-6980-4f4f-8b39-cf84f67beffe.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/1302f5d2-8ff1-4901-88f7-5fe4a92925a7.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/0f562120-dba6-4c02-8663-8533faaf96cb.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/42d9c592-a92b-404f-b864-f5891136f0ed.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/3fd62d7e-2907-4b17-96d2-044ad9b7d56b.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/f35d53ea-aa7c-4602-8aa0-1165ba9e1a86.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/40e4ccf9-57d9-48c5-b4e5-204bc1b893aa.jpg"
+  ],
+  "floorplans": [
+    "https://cdn.webdadi.net/Media/image/xl/b90d6543-8b20-4028-b852-e447819e9bcd.gif"
+  ],
+  "epcs": [],
+  "features": [
+    "4 Bedroom Apartment",
+    "Spectacular Views",
+    "26th Floor",
+    "Family Bathroom & Separate Shower Room",
+    "Underfloor Heating Included in Service Charge",
+    "Generous Storage",
+    "24 Hour Porterage",
+    "Extended Lease",
+    "Great Transport Links inc the Elizabeth Line",
+    "No Onward Chain"
+  ],
+  "description_html": "<p>Spectacular views all around the apartment. This four-bedroom apartment is located on the 26th floor. Type 1B All principal rooms have floor to ceiling full height/width windows and a door leading to the balcony. Family bathroom &amp; separate shower room. Generous storage with built in wardrobes including a cupboard on entering for coats etc. The space inside the apartment is flexible so giving scope to a blank canvas of open space including removing the fourth bedroom with permissions to create a generous living room. Useful utility room just off the kitchen. Underfloor heating included in the service charge. 24 hour porterage. 3 lifts. Use of residents gardens. Car parking and bike storage by separate negotiation with the City of London. The Barbican Estate includes the Barbican Arts Centre, cinemas, art gallery, concert hall, theatre, restaurants, bars and cafes. Waitrose, Marks &amp; Spencer and Tesco are close at hand. The Barbican is perfectly located for the Elizabeth Line, with both Farringdon and Liverpool Street stations only a short walk away. Also in close proximity to the various lines at underground stations Barbican, St. Paul’s, and Moorgate. No onward chain.<br>Service Charge: Estimated £12,122 01/04/25 to 31/03/26.<br>Ground Rent: Peppercorn<br>Extended Lease to year 2196</p>",
+  "contact_telephone": "020 3488 4330",
+  "source_url": "https://www.nicolalee.co.uk/property/dwr000546/ec2y/london/lauderdale-tower/apartment/4-bedrooms",
+  "tenure": "Leasehold",
+  "fetched_at": "2026-10-12T10:30:40.622Z"
+}

@@ -1,0 +1,51 @@
+{
+  "property_id": "nicolalee-dwr000545",
+  "agency_name": "Nicola Lee",
+  "channel": "sales",
+  "status": "Sold STC",
+  "display_address": "Defoe House, Barbican, London",
+  "road_name": "Defoe House",
+  "postcode": "EC2Y 8DN",
+  "lat": 51.5199151,
+  "lng": -0.095298,
+  "price": "£930,000",
+  "price_value": "930000",
+  "bedrooms": "2",
+  "bathrooms": "1",
+  "reception_rooms": "1",
+  "photos": [
+    "https://cdn.webdadi.net/Media/image/xl/246f492e-1e69-4227-862e-e18a4a8f6055.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/4ed450e1-bd7d-4871-adf4-7c56ade0a12f.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/896ec62d-5154-4a13-a8d8-c5c475132b29.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/3c0673eb-79f6-4764-8956-37db77830fee.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/b91707ff-04e5-4449-8916-d5f65d5059b4.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/ba6e9c60-db94-40ba-8e8f-4e74f5e383ca.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/b0438349-fe98-44d7-a289-333023383673.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/005df3f2-dee4-41e6-88e2-52276afb2e1c.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/0d95906d-a7c6-4b10-9097-95af354796d9.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/1b9b4f35-5ee8-451c-9a62-dc2723ffd61f.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/88d2dcac-40ac-4142-a4e9-95cd09d404b1.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/f085015c-1348-49d7-a5ab-b7560ab98d71.jpg"
+  ],
+  "floorplans": [
+    "https://cdn.webdadi.net/Media/image/xl/26976d78-955e-4eb6-84d8-f3eeacbb28a2.gif"
+  ],
+  "epcs": [],
+  "features": [
+    "Bright 2 Bedroom Apartment",
+    "5th Floor",
+    "Dual Aspect",
+    "South Facing",
+    "Separate W.C.",
+    "Underfloor Heating Included in Service Charge",
+    "24 Hour Porterage",
+    "Great Transport Links Including Elizabeth Line",
+    "Extended Lease",
+    "No Onward Chain"
+  ],
+  "description_html": "<p>Bright 2-bedroom apartment on the 5th floor. Type 21. Dual aspect south facing reception with a balcony and views of the gardens. Refurbished. Separate W.C. Generous built-in wardrobes in both bedrooms. Underfloor heating throughout included in the service charge. Use of the residents gardens. Lift.  24hr car park attendants can hold keys and receive packages. Car parking and bike storage by separate negotiation with the City of London. The Barbican Estate includes the Barbican Arts Centre, cinemas, art gallery, concert hall, theatre, restaurants, bars and cafes. Waitrose, Marks &amp; Spencer and Tesco are close at hand. The Barbican is perfectly located for the Elizabeth Line, with both Farringdon and Liverpool Street stations only a short walk away. Also in close proximity to the various lines at underground stations Barbican, St. Paul’s, and Moorgate. No onward chain.<br>Service Charge: Estimated: £5,893 01/04/26 to 31/03/27.<br>Lease: Extended to 2196<br>Ground Rent: peppercorn<br><br></p>",
+  "contact_telephone": "020 3488 4330",
+  "source_url": "https://www.nicolalee.co.uk/property/dwr000545/ec2y/london/defoe-house/apartment/2-bedrooms",
+  "tenure": "Leasehold",
+  "fetched_at": "2026-10-12T10:30:48.319Z"
+}

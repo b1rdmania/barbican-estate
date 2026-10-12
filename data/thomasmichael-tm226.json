@@ -1,0 +1,31 @@
+{
+  "property_id": "thomasmichael-tm226",
+  "agency_name": "Thomas Michael",
+  "channel": "sales",
+  "status": "Available",
+  "display_address": "Defoe House, Barbican, London",
+  "road_name": "Defoe House",
+  "postcode": "EC2Y",
+  "lat": 51.519938,
+  "lng": -0.095464,
+  "price": "£925,000",
+  "price_value": "925000",
+  "bedrooms": "1",
+  "bathrooms": "",
+  "reception_rooms": "",
+  "photos": [
+    "https://cdn103.estateweb.com/PhotoServ/Default.aspx?a=8207&i=1.jpg&r=TM226&l=4&h=853&w=1280&st=&rt=0.07&ds=1&lt=5&t=0&resinfo=&ct=0",
+    "https://cdn103.estateweb.com/PhotoServ/Default.aspx?a=8207&i=2.jpg&r=TM226&l=4&h=853&w=1280&st=&rt=0.07&ds=1&lt=5&t=0&resinfo=&ct=0"
+  ],
+  "floorplans": [],
+  "epcs": [],
+  "features": [
+    "Council tax band E",
+    "Barbican flat type 20"
+  ],
+  "description_html": "This large one bedroom flat (Type 20) is on the 6th floor of Defoe House, Barbican with aspect over the residents' garden and of the City skyline and St Paul's.  <br> <br> <p>This flat requires some refurbishment and is sold chain free.  <br> <br> Defoe House is superbly located seconds from the Barbican Arts Centre and lakeside terrace. The restaurants, bars, shops and amenities of Smithfield and Farringdon are also a short walk away. Barbican (Elizabeth, Circle, Metropolitan, Hammersmith & City) is the closest station.<br> <br> Residents facilities and services: full use of the private Barbican gardens; storage lockers and parking are available by separate arrangement; collection of rubbish and recycling from your door; cycle parking; 24 hour car park porterage; tennis courts (small fee applies); proximity of the world renowned Barbican Arts Centre with its concert hall, cinema screens, theatre, galleries, library, shops, bars and restaurants.<br> <br> Managed by the City of London Corporation, the Barbican Estate is the finest achievement of the architects Chamberlin, Powell & Bon. It was Grade II listed in 2001 in recognition of its extraordinary contribution to London's urban landscape.<br> <br> Council tax - City of London, Band E, £1,557 PA. <br> Service charge: TBC<br> To be sold with extended lease<br> Underfloor heating is included within the service charge.<br> Chain free</p> <br> <br>",
+  "contact_telephone": "020 7060 0450",
+  "source_url": "https://www.thomasmichael.co.uk/property/residential/for-sale/london/barbican/TM226",
+  "tenure": "Leasehold",
+  "fetched_at": "2026-10-12T10:29:41.303Z"
+}

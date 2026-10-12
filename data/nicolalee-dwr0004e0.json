@@ -1,0 +1,50 @@
+{
+  "property_id": "nicolalee-dwr0004e0",
+  "agency_name": "Nicola Lee",
+  "channel": "lettings",
+  "status": "Let Agreed",
+  "display_address": "Ben Jonson House, Barbican, London",
+  "road_name": "Ben Jonson House",
+  "postcode": "EC2Y 8DL",
+  "lat": 51.520886,
+  "lng": -0.09405,
+  "price": "£2,491pcm",
+  "price_value": "2491",
+  "bedrooms": "1",
+  "bathrooms": "1",
+  "reception_rooms": "1",
+  "photos": [
+    "https://cdn.webdadi.net/Media/image/xl/76887456-10de-4c1d-8570-446debe09f84.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/b208b976-abb6-4549-a790-b0b74805954c.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/aa8519a8-d5c4-454d-ad3e-f6f16c5d5722.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/dd9fae18-199a-400e-9d20-527baf3ba602.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/f2b1b72d-68ad-46e5-84fb-76456b1103f2.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/47b9b9ca-9242-4f62-92bd-e02f14647672.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/66697495-d73f-4def-9763-7936ad56f69c.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/53486fd7-fefc-4ab9-bb29-f29c08c35344.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/a35e5f2c-e2a1-46b1-a16f-6c79d1272e5f.jpg"
+  ],
+  "floorplans": [
+    "https://cdn.webdadi.net/Media/image/xl/ca2b9cec-ea8c-4ce7-9854-fd162644c7da.gif"
+  ],
+  "epcs": [
+    "https://cdn.webdadi.net/media/pdf/3f6d0cf6-1539-42fe-a9f1-e6f603a247b9.pdf"
+  ],
+  "features": [
+    "One Bedroom",
+    "Bright South Facing",
+    "Underfloor Heating included in the Rent",
+    "2nd Floor",
+    "Lifts",
+    "Use of Residents Gardens",
+    "Part Furnished",
+    "Great Transport Links",
+    "Elizabeth Line only a Short Walk Away",
+    "Available 13th October"
+  ],
+  "description_html": "<p>Bright, south-facing, part-furnished one-bedroom apartment, located on the second floor.<br>Please note that some furniture shown in the photographs has since been removed. The apartment is offered part furnished.<br>The apartment benefits from underfloor heating throughout, included in the rent, and full-height, full-width glazed doors and windows leading onto a balcony/fire escape. Several lifts.<br>Residents have exclusive use of the Barbican’s communal gardens, while the 24-hour car park attendants provide keyholding and parcel-receiving services. Car parking and bicycle storage may be available by separate arrangement with the City of London.<br>The Barbican Estate is home to the Barbican Arts Centre, cinemas, art gallery, concert hall, restaurants, bars and cafés. Waitrose and Marks &amp; Spencer are also close at hand.<br>Perfectly located for the Elizabeth Line, with both Farringdon (offering direct services to Heathrow and Gatwick) and Liverpool Street stations within a short walk. Barbican, St Paul’s and Moorgate Underground stations are also nearby, providing excellent transport links across London.<br>Please note that, under the terms of the head lease, pets are not permitted.<br>Part furnished and available from 13 October 2026.<br>To check broadband and mobile phone coverage, please visit the Ofcom coverage checker.<br>Five weeks’ deposit required.</p>",
+  "contact_telephone": "020 3488 4330",
+  "source_url": "https://www.nicolalee.co.uk/property/dwr0004e0/ec2y/london/ben-jonson-house/apartment/1-bedroom",
+  "tenure": "",
+  "fetched_at": "2026-10-12T10:30:32.173Z"
+}

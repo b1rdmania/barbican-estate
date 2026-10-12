@@ -1,0 +1,49 @@
+{
+  "property_id": "nicolalee-dwr0004d3",
+  "agency_name": "Nicola Lee",
+  "channel": "lettings",
+  "status": "Let Agreed",
+  "display_address": "Bryer Court, Barbican, London",
+  "road_name": "Bryer Court",
+  "postcode": "EC2Y 8DE",
+  "lat": 51.520692,
+  "lng": -0.095946,
+  "price": "£2,275pcm",
+  "price_value": "2275",
+  "bedrooms": "0",
+  "bathrooms": "1",
+  "reception_rooms": "1",
+  "photos": [
+    "https://cdn.webdadi.net/Media/image/xl/921755c3-796b-4863-994c-bb1d634b2734.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/064bc948-13d4-443c-a237-b1adc544aa90.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/3eca4dea-3510-408d-abde-666565aa5467.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/33018d35-7abb-43b8-834a-cf220d99516a.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/f23c1a91-1e2f-4e09-9e39-30223f68cf4a.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/d3e8e264-f9c8-4082-ac42-d304deb6e934.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/d345f560-0760-4ab9-af3d-b89762d58e5d.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/8c81ca52-be3b-4064-ade8-6bbbb84cd26d.jpg"
+  ],
+  "floorplans": [
+    "https://cdn.webdadi.net/Media/image/xl/ddc03ba9-5014-4713-8371-497108f296df.gif"
+  ],
+  "epcs": [
+    "https://cdn.webdadi.net/media/pdf/c82fe1ab-82a9-4cab-854b-ba44c43d918d.pdf"
+  ],
+  "features": [
+    "Extremely Bright Studio",
+    "West Facing",
+    "Underfloor Heating included in the Rent",
+    "Lovely Views across Beech Gardens",
+    "2 Lifts",
+    "Use of Residents Gardens",
+    "24 Hour Porterage",
+    "Great Transport Links including Elizabeth Line",
+    "Unfurnished",
+    "Available Beginning of April"
+  ],
+  "description_html": "<p>Extremely bright west facing studio flat. Lovely views across Beech gardens. Shower room with natural light. On entering the block there is a lovely reflecting pool. Underfloor heating included in the rent. 2 Lifts. 24hr car park attendants can hold keys and receive packages. Use of all the residents gardens. Car parking and bike storage by separate negotiation with the City of London. The Barbican Estate includes the Barbican Arts Center, cinemas, art gallery, concert hall, restaurants, bars and cafes. Waitrose and Marks &amp; Spencer are close at hand. The Barbican is perfectly located for the Elizabeth Line, with both Farringdon, (which has direct trains to both Heathrow and Gatwick), and Liverpool Street stations only a short walk away, also with close proximity to the various lines at underground stations Barbican, St. Paul’s, and Moorgate. Unfurnished. Available beginning of April<br>Viewing for this property is Tuesday - Thursday 1.00 - 3.00pm<br>5 Weeks Deposit Required<br>To check broadband and mobile phone coverage please visit Ofcom here: ofcom.org.uk/phones-telecoms-and-internet/advice-for-consumers/advice/ofcom-checker</p>",
+  "contact_telephone": "020 3488 4330",
+  "source_url": "https://www.nicolalee.co.uk/property/dwr0004d3/ec2y/london/bryer-court/apartment/studio",
+  "tenure": "",
+  "fetched_at": "2026-10-12T10:30:33.809Z"
+}

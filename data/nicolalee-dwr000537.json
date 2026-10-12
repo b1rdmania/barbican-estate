@@ -1,0 +1,47 @@
+{
+  "property_id": "nicolalee-dwr000537",
+  "agency_name": "Nicola Lee",
+  "channel": "sales",
+  "status": "Sold",
+  "display_address": "John Trundle Court, Barbican, Lindsay",
+  "road_name": "John Trundle Court",
+  "postcode": "EC2Y 8NE",
+  "lat": 51.5205253,
+  "lng": -0.096939,
+  "price": "£525,000",
+  "price_value": "525000",
+  "bedrooms": "2",
+  "bathrooms": "1",
+  "reception_rooms": "1",
+  "photos": [
+    "https://cdn.webdadi.net/Media/image/xl/f40da6d3-6e72-44c6-b480-ce5042efd3e7.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/e760d075-1894-473a-8529-c4d5288e3378.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/e77fd412-b0da-4ab0-b364-a99cc2981a73.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/a33e53be-a409-4c52-bc28-974ed531b78e.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/ec3f8eff-4c70-426d-9931-c33dac1c81ee.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/94653dd8-adae-4029-a0a6-84476dd58aa0.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/de40cddc-8a3d-407c-995b-97d951fbec11.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/5b9eea30-8a7a-4f44-8deb-7cd162598012.jpg"
+  ],
+  "floorplans": [
+    "https://cdn.webdadi.net/Media/image/xl/adce5d43-acf6-46e1-bcb6-fb549123b2a1.gif"
+  ],
+  "epcs": [],
+  "features": [
+    "Immaculate Large Style Studio",
+    "Refurbished by Thomson Bro's",
+    "Generous Storage",
+    "West Facing",
+    "2nd Floor",
+    "Lift",
+    "Underfloor Heating Included in the Service Charge",
+    "24Hr Porterage",
+    "Great Transport Links including Elizabeth Line",
+    "No Onward Chain"
+  ],
+  "description_html": "<p>Immaculate large style studio type F2A. 3 full height width floor to ceiling door/windows leading to a balcony/fire exit. Refurbished by the Thomson Bro’s. Generous storage. West facing located on the 2nd floor. Lift. Underfloor heating included in the service charge. Lift. Use of residents’ gardens. 24hr car park attendants can hold keys and receive packages. Car parking and bike storage by separate negotiation with the City of London. The Barbican Estate includes the Barbican Arts Centre, cinemas, art gallery, concert hall, theatre, restaurants, bars and cafes. Waitrose, Marks &amp; Spencer and Tesco are close at hand. The Barbican is perfectly located for the Elizabeth Line, with both Farringdon and Liverpool Street stations only a short walk away. Also in close proximity to the various lines at underground stations Barbican, St. Paul’s, and Moorgate. No onward chain.<br>Service Charge: Estimated: £4,331 - 01/04/25 to 31/03/26.<br>Lease: 1st July 2196<br>Ground Rent: Peppercorn</p>",
+  "contact_telephone": "020 3488 4330",
+  "source_url": "https://www.nicolalee.co.uk/property/dwr000537/ec2y/lindsay/john-trundle-court/apartment/studio",
+  "tenure": "Leasehold",
+  "fetched_at": "2026-10-12T10:31:06.424Z"
+}

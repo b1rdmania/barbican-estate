@@ -1,0 +1,50 @@
+{
+  "property_id": "nicolalee-dwr0004db",
+  "agency_name": "Nicola Lee",
+  "channel": "sales",
+  "status": "Sold",
+  "display_address": "Frobisher Crescent, Barbican, London",
+  "road_name": "Frobisher Crescent",
+  "postcode": "EC2Y 8HD",
+  "lat": 51.5205145,
+  "lng": -0.093721,
+  "price": "£525,000",
+  "price_value": "525000",
+  "bedrooms": "2",
+  "bathrooms": "1",
+  "reception_rooms": "1",
+  "photos": [
+    "https://cdn.webdadi.net/Media/image/xl/ab581134-4c5a-4a72-9fea-543273611aa4.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/33a7db38-be89-46ff-8779-66a8c8abb40e.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/758def4e-7504-43b7-b1f8-639348ff4002.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/1f465fc1-9462-4142-986d-ddc8614946df.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/3476a135-8870-4469-b004-34792600115c.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/9b28228a-76dc-4151-b0c7-56968cf15a2b.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/6a398cc3-4eba-4ba4-bd24-3e1c6cabffe0.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/b2514ca3-d918-41b8-b945-754a9c0ddd63.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/7ca5de83-e20b-4d48-a44a-2de15381f440.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/aacb51f0-ee56-491a-a3f7-5e8b7f97c1af.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/38aedc01-3ac8-4ee7-80c3-359b7ee7b6fb.jpg"
+  ],
+  "floorplans": [
+    "https://cdn.webdadi.net/Media/image/xl/067cf33d-b029-44ec-88f0-c71b2fb4c368.gif"
+  ],
+  "epcs": [],
+  "features": [
+    "Beautifully Presented Larger Studio",
+    "Quiet Location",
+    "Pull Down Bed",
+    "Wooden Flooring",
+    "Overlooking the Sculpture Court",
+    "3 Lifts",
+    "Use of Residents Gardens",
+    "24 Hour Porterage",
+    "Great Transport Links Including Elizabeth Line",
+    "No Onward Chain"
+  ],
+  "description_html": "<p>Beautifully presented studio located in the heart of the Barbican Art Centre.  Quiet location on the 8th floor overlooking the Sculpture Court. One of the larger studios in Frobisher. Full height width floor to ceiling door/windows leading to a balcony/fire exit. The apartment benefits from a pull down bed with a cleverly designed table attached. There is a built in wardrobe with drawers and the wall units include a desk area. Generous shower room with a built in cupboard housing a washer/dryer. Beautiful wood flooring throughout the reception and hallway. There are three lifts for access along the Crescent. One of the lifts gives you direct access into the theatre/concert hall. Use of pretty residents gardens. 24 hour car park attendants on hand to receive parcels and hold keys etc. Parking by separate negotiation with the City of London. The Barbican Estate, architects Chamberlain, Powell &amp; Bon includes the Barbican Arts Center, cinema, art gallery, concert hall, restaurants, bars and cafes. Waitrose, Marks &amp; Spencer and Tesco's are close at hand. The Barbican is perfectly located for the  Elizabeth Line, with both Farringdon and Liverpool Street stations only a short walk away. Also in close proximity to the various lines at underground stations Barbican, St. Paul’s, and Moorgate.  No onward chain.<br>Service Charge: Estimated £3,135 1st April – 31st March 2025/2026<br>Leasehold: 150 years from 2010<br>Ground Rent £150 per annum.<br><br></p>",
+  "contact_telephone": "020 3488 4330",
+  "source_url": "https://www.nicolalee.co.uk/property/dwr0004db/ec2y/london/frobisher-crescent/apartment/studio",
+  "tenure": "Leasehold",
+  "fetched_at": "2026-10-12T10:31:04.857Z"
+}

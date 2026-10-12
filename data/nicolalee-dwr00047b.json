@@ -1,0 +1,49 @@
+{
+  "property_id": "nicolalee-dwr00047b",
+  "agency_name": "Nicola Lee",
+  "channel": "lettings",
+  "status": "Let Agreed",
+  "display_address": "Breton House, Barbican, London",
+  "road_name": "Breton House",
+  "postcode": "EC2Y 8DQ",
+  "lat": 51.5213331,
+  "lng": -0.0938102,
+  "price": "£1,950pcm",
+  "price_value": "1950",
+  "bedrooms": "0",
+  "bathrooms": "1",
+  "reception_rooms": "1",
+  "photos": [
+    "https://cdn.webdadi.net/Media/image/xl/e0a97737-60a3-4207-a832-e9e5bcff02cf.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/8fef56c5-49e9-4605-889f-98e96015b0c8.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/7378166d-c3d9-44fb-942c-d4f2adcfc873.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/0fcc29a7-c630-433d-921c-067a0066ae2a.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/ba814e87-c137-4274-a711-e2a3a211cd21.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/144cad3b-0c7c-4ea9-832d-8dd8397a6cda.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/8dc9340f-a7da-4075-a190-62661834cedb.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/978700de-b56e-4509-869e-0f1ab98193aa.jpg",
+    "https://cdn.webdadi.net/Media/image/xl/155ad9b6-d60c-43da-81e4-b59f44af3622.jpg"
+  ],
+  "floorplans": [
+    "https://cdn.webdadi.net/Media/image/xl/c54a13bb-33b4-4efb-bfbf-f887d3c465a2.gif"
+  ],
+  "epcs": [
+    "https://cdn.webdadi.net/media/pdf/eb469d51-2076-4e6f-bb78-992626937340.pdf"
+  ],
+  "features": [
+    "Studio",
+    "Pull Down Bed",
+    "Unfurnished",
+    "Electric Window Blinds",
+    "Underfloor heating included in the rent",
+    "Use of Residents Gardens",
+    "24hr Porterage",
+    "Great Transport Links including Elizabeth Line",
+    "Available from 4th August"
+  ],
+  "description_html": "<p>Well-presented, bright west-facing studio apartment located on the second floor.<br>Offered unfurnished with a pull-down bed, electric window blinds and lift access. Underfloor heating is included in the rent and is supplied via the Barbican Estate's communal heating system. Residents also benefit from the use of all the Barbican gardens. Please note that, under the terms of the head lease, pets are not permitted.<br>The Barbican's 24-hour car park attendants can hold keys and accept parcels. Car parking and cycle storage are available by separate negotiation with the City of London.<br>The Barbican Estate is home to the Barbican Arts Centre, cinemas, art gallery, concert hall, restaurants, bars and cafés. Waitrose and Marks &amp; Spencer are both close by.<br>Perfectly located for the Elizabeth Line, with both Farringdon and Liverpool Street stations only a short walk away. Barbican, Moorgate and St Paul's Underground stations are also within easy walking distance, providing excellent transport links across London.<br>To check broadband and mobile phone coverage, please visit Ofcom's checker.<br>Unfurnished. Available 4 August.<br>Five weeks' deposit.</p>",
+  "contact_telephone": "020 3488 4330",
+  "source_url": "https://www.nicolalee.co.uk/property/dwr00047b/ec2y/london/breton-house/apartment/studio",
+  "tenure": "",
+  "fetched_at": "2026-10-12T10:30:35.424Z"
+}

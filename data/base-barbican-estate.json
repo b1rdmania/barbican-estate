@@ -1,0 +1,41 @@
+{
+  "property_id": "base-barbican-estate",
+  "agency_name": "Base Property Specialists",
+  "channel": "lettings",
+  "status": "Let",
+  "display_address": "Thomas More House, Barbican, London",
+  "road_name": "Thomas More House",
+  "postcode": "EC2Y",
+  "lat": 51.51904,
+  "lng": -0.09603,
+  "price": "£2,500pcm",
+  "price_value": "2500",
+  "bedrooms": "1",
+  "bathrooms": "2",
+  "reception_rooms": "",
+  "photos": [
+    "https://cdn.prod.website-files.com/65f097bb173af67e9bb7ea2f/69e9f1568473c3433a4b3b31_th165%2012_result.avif",
+    "https://cdn.prod.website-files.com/65f097bb173af67e9bb7ea2f/69e9f15626256e4ba24b7bdc_th165%2015_result.avif",
+    "https://cdn.prod.website-files.com/65f097bb173af67e9bb7ea2f/69e9f1561385d508e13abf3a_th165%2001_result.avif",
+    "https://cdn.prod.website-files.com/65f097bb173af67e9bb7ea2f/69e9f155b88fff544a7d5959_th165%2002_result.avif",
+    "https://cdn.prod.website-files.com/65f097bb173af67e9bb7ea2f/69e9f15678e88c11d6b7070e_th165%2006_result.avif",
+    "https://cdn.prod.website-files.com/65f097bb173af67e9bb7ea2f/69e9f15537f397532d4b9b48_th165%2008_result.avif",
+    "https://cdn.prod.website-files.com/65f097bb173af67e9bb7ea2f/69e9f155c7f02f95a61ce718_th165%2011_result.avif"
+  ],
+  "floorplans": [
+    "https://cdn.prod.website-files.com/65f097bb173af67e9bb7ea2f/69e9f1671c2830c4e42fc158_Thomas%20More%20House%20Floor%20Plan_result.avif"
+  ],
+  "epcs": [
+    "https://find-energy-certificate.service.gov.uk/energy-certificate/0266-2852-6684-9491-1941"
+  ],
+  "features": [
+    "Property type: Apartment",
+    "Available May 1, 2026",
+    "Virtual tour: https://tour.giraffe360.com/thomas-more-house/"
+  ],
+  "description_html": "<p>This fabulous 7th floor apartment forms part of the desirable Grade II listed Barbican estate, - one of the finest achievements of the architects Chamberlain, Powell &amp; Bon. Located within the Barbican complex is the Barbican Arts Centre, including a concert hall, theatres, art gallery, cinemas and restaurants. The contemporary and spacious apartment retains some of the beautiful original features, including the original windows. The open-plan reception boasts French doors leading to a private balcony, offering stunning views of the London skyline, including St Pauls Cathedral. The state-of-the-art kitchen has all mod cons as well as a breakfast bar. Furthermore there is a modern bathroom, separate WC and a good-size bedroom leading to a second balcony overlooking the lush Residents gardens. Close to Smithfield Market, and Barbican and Moorgate Tube Stations.</p>",
+  "contact_telephone": "0207 033 1901",
+  "source_url": "https://www.baseps.co.uk/our-homes/barbican-estate",
+  "tenure": "",
+  "fetched_at": "2026-10-12T10:30:08.519Z"
+}
