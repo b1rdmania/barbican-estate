@@ -181,6 +181,8 @@ const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g
 const pad = (n) => String(n).padStart(2, '0');
 const money = (n) => '£' + Math.round(n).toLocaleString('en-GB');
 const resize = (u, size) => 'https:' + u.replace(/^https?:/, '').replace(/\/\d+x\d*\//, `/${size}/`);
+// Data inlined into <script>: escape '<' so text can never close the tag.
+const json = (v) => JSON.stringify(v).replace(/</g, '\\u003c');
 const num = (v) => Number(String(v).replace(/[^\d.]/g, '')) || 0;
 
 const GROUPS = [
@@ -340,8 +342,8 @@ ${here.map((d) => card(d, true)).join('\n')}
 <div id="map" style="margin-top:1rem"></div>
 </div>
 <script>
-const ROWS = ${JSON.stringify(rowsData)};
-const ESTATE = ${JSON.stringify(ESTATE)};
+const ROWS = ${json(rowsData)};
+const ESTATE = ${json(ESTATE)};
 const S = { st: 'live', beds: 'any', sort: 'desc', block: new URLSearchParams(location.search).get('block') };
 const files = [...document.querySelectorAll('#files .card')];
 // The map is extra: if Leaflet fails to load, the filters and cards still work.
@@ -457,7 +459,7 @@ ${c ? `<a class="block-link" href="../blocks/${slug(name)}/"><b>About ${esc(name
 </div>
 <div class="lb"><button class="x" aria-label="Close">×</button><button class="p" aria-label="Previous">‹</button><img alt=""><button class="n" aria-label="Next">›</button></div>
 <script>
-const P = ${JSON.stringify(photos)}, lb = document.querySelector('.lb'), im = lb.querySelector('img'); let i = 0;
+const P = ${json(photos)}, lb = document.querySelector('.lb'), im = lb.querySelector('img'); let i = 0;
 const show = (n) => { i = (n + P.length) % P.length; im.src = P[i]; lb.classList.add('on'); };
 const hide = () => lb.classList.remove('on');
 document.querySelectorAll('img[data-i]').forEach((e) => (e.onclick = () => show(+e.dataset.i)));

@@ -4,9 +4,28 @@ import { readdirSync, readFileSync, writeFileSync, mkdirSync, rmSync, copyFileSy
 import { renderArchive } from './archive.mjs';
 
 
+// Agency text and links go into our pages, so keep only plain formatting and http(s) links.
+const TAGS = new Set(['p', 'br', 'b', 'strong', 'i', 'em', 'ul', 'ol', 'li']);
+const tidy = (html) => String(html || '')
+  .replace(/<(script|style|iframe|object|template)\b[\s\S]*?<\/\1\s*>/gi, '')
+  .replace(/<!--[\s\S]*?-->/g, '')
+  .replace(/<\/?([a-z][a-z0-9]*)\b[^>]*>/gi, (tag, name) => (TAGS.has(name.toLowerCase()) ? (tag[1] === '/' ? `</${name.toLowerCase()}>` : `<${name.toLowerCase()}>`) : ''));
+const webUrl = (u) => (/^(https?:)?\/\//i.test(String(u || '')) ? String(u) : '');
+function clean(d) {
+  return {
+    ...d,
+    description_html: tidy(d.description_html),
+    source_url: webUrl(d.source_url),
+    photos: (d.photos || []).map(webUrl).filter(Boolean),
+    floorplans: (d.floorplans || []).map(webUrl).filter(Boolean),
+    features: (d.features || []).map(String),
+  };
+}
+
 const flats = readdirSync('data')
   .filter((f) => /^(\d+|[a-z]+-[\w-]+)\.json$/.test(f))
   .map((f) => JSON.parse(readFileSync(`data/${f}`, 'utf8')))
+  .map(clean)
   .sort((a, b) => b.fetched_at.localeCompare(a.fetched_at));
 
 // Pull "Security Deposit: £x" style lines out of the description into facts.
