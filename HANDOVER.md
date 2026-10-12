@@ -1,6 +1,6 @@
 # Barbican Estate site: handover (banked 2026-10-11)
 
-Live: https://mighty-raven-26kk.here.now/ (here.now, permanent, slug `mighty-raven-26kk`).
+Live: https://barbican.estate/ (here.now slug `mighty-raven-26kk`, also at https://mighty-raven-26kk.here.now/). DNS on Cloudflare: two A records + www CNAME to fallback.here.now, DNS only.
 Three sections: Lettings, Sales, History. Root redirects to Lettings.
 
 ## Run it
@@ -10,7 +10,7 @@ cd ~/Documents/flatview
 ./flat barbican          # fetch every agency's Barbican listings, rebuild, republish
 ./flat 22184890          # fetch one listing by ID or URL, rebuild, republish
 node build.mjs           # rebuild site/ from data/ only (no fetch)
-node ios-check.mjs https://mighty-raven-26kk.here.now/ <out-dir>   # WebKit iPhone 15 check
+node ios-check.mjs https://barbican.estate/ <out-dir>   # WebKit iPhone 15 check
 ```
 
 Fetching opens visible Chrome windows (Frank Harris, Nicola Lee) for a few minutes. Cloudflare blocks curl and headless Chrome on those two.

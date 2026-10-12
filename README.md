@@ -6,7 +6,7 @@ A site about the Barbican Estate in the City of London. It has three sections:
 - **Sales**: flats for sale on the estate.
 - **History**: the story of the estate, its 21 blocks and its flat types.
 
-Live site: https://mighty-raven-26kk.here.now/
+Live site: https://barbican.estate/
 
 ## Where the listings come from
 

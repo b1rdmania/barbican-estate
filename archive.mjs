@@ -190,7 +190,7 @@ const GROUPS = [
 const ALL = GROUPS.flatMap(([, names]) => names);
 const SECTIONS = [['lettings', 'LETTINGS'], ['sales', 'SALES'], ['blocks', 'HISTORY']];
 // Absolute base for share-card URLs (Telegram and others need a full URL).
-const SITE = 'https://mighty-raven-26kk.here.now/';
+const SITE = 'https://barbican.estate/';
 
 export function renderArchive({ flats, building, split, price, live, isBarbican }) {
   const listings = flats.filter(isBarbican);
