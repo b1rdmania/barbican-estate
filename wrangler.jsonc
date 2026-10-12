@@ -1,0 +1,17 @@
+// Cloudflare Worker that serves the built site (site/). Deploy: npx wrangler deploy
+{
+  "name": "barbican-estate",
+  "account_id": "ff7e84841bce6f90ee9479e0cb31b2ca",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./site",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "run_worker_first": true
+  },
+  "routes": [
+    { "pattern": "barbican.estate", "custom_domain": true },
+    { "pattern": "www.barbican.estate", "custom_domain": true }
+  ]
+}

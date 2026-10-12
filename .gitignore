@@ -4,3 +4,4 @@ node_modules
 site
 .DS_Store
 .chrome-profile-*
+.wrangler

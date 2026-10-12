@@ -1,6 +1,6 @@
 #!/bin/sh
-# Usage: ./flat barbican                 fetch every agency, rebuild, republish
-#        ./flat <frankharris id or url>  fetch one Frank Harris listing, rebuild, republish
+# Usage: ./flat barbican                 fetch every agency, rebuild, deploy
+#        ./flat <frankharris id or url>  fetch one Frank Harris listing, rebuild, deploy
 # Agencies: Frank Harris (fetch.mjs), Nicola Lee, Thomas Michael, Base (fetchers/).
 set -e
 cd "$(dirname "$0")"
@@ -9,5 +9,4 @@ if [ "$1" = barbican ]; then
   for f in fetchers/*.mjs; do node "$f" || echo "warning: $f failed, keeping its old data"; done
 fi
 node build.mjs
-SLUG=$(jq -r '.publishes | keys[0] // empty' .herenow/state.json 2>/dev/null || true)
-~/.claude/skills/here-now/scripts/publish.sh site ${SLUG:+--slug "$SLUG"} --client claude-code
+GODEBUG=netdns=go npx wrangler deploy   # Cloudflare Worker barbican-estate -> https://barbican.estate/

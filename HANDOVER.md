@@ -1,6 +1,6 @@
 # Barbican Estate site: handover (banked 2026-10-11)
 
-Live: https://barbican.estate/ (here.now slug `mighty-raven-26kk`, also at https://mighty-raven-26kk.here.now/). DNS on Cloudflare: two A records + www CNAME to fallback.here.now, DNS only.
+Live: https://barbican.estate/ on a Cloudflare Worker (`barbican-estate`, `wrangler.jsonc`, `worker/index.js`; www 301s to the bare domain). The old here.now address (mighty-raven-26kk) now only holds redirect pages to the same paths on barbican.estate.
 Three sections: Lettings, Sales, History. Root redirects to Lettings.
 
 ## Run it
