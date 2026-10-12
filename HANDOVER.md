@@ -21,6 +21,7 @@ Repo: https://github.com/b1rdmania/barbican-estate (public).
 
 | File | What it does |
 | --- | --- |
+| `reconcile.mjs` | After each agency fetch: updates `data/seen.json` and counts listings that were not seen |
 | `fetchers/*.mjs` | Nicola Lee, Thomas Michael, Base fetchers. Each writes `data/<agency>-<id>.json` in the Frank Harris field shape |
 | `fetch.mjs` | Frank Harris fetcher (Homeflow: `Ctesius.addConfig` JSON in each listing page; feeds at `/properties/{lettings,sales}[/page-N].ljson`) |
 | `build.mjs` | Loads `data/<id>.json`, works out the block, calls `archive.mjs` |
@@ -51,11 +52,26 @@ Repo: https://github.com/b1rdmania/barbican-estate (public).
 
 `editorial.mjs` uses the existing archive shell; `editorial.css` adds styles without changing `archive.css`. Six films and five flat-type guides are curated in `content/`. Read `content/EDITORIAL.md` for the contribution review workflow and sources. `node tests/editorial.mjs` checks the generated pages. The contribution page previews/downloads drafts; set a public inbox in `content/contribute.json` to enable email handoff. New contributions are never published automatically.
 
+## Listing freshness
+
+- `./flat barbican` runs `reconcile.mjs` after each agency fetch. It keeps `data/seen.json` (first_seen, last_seen, missed per listing file). Fetchers rewrite listing files from scratch, so this history lives apart from them.
+- A listing missing from two complete fetches in a row shows as "No longer listed" and leaves the available view. A run that sees 0 listings for an agency that had live stock counts as a failed crawl and changes nothing.
+- Live statuses are an allowlist in `build.mjs` (`LIVE`): To let, For sale, Available.
+
+## Build safety
+
+- `build.mjs` cleans agency HTML (p, br, b, strong, i, em, ul, ol, li; no attributes) and keeps only http(s) links.
+- `archive.mjs` inlines data into scripts with `json()`, which escapes `<`.
+- Listings filters do not depend on the map. If Leaflet fails, the page still filters.
+- Every page has a canonical URL and a meta description. `build.mjs` writes `sitemap.xml` and `robots.txt`.
+
+## Open work
+
+Tracked as GitHub issues: https://github.com/b1rdmania/barbican-estate/issues (rights, cross-agency de-duplication, Thomas Michael pagination, self-hosted Leaflet, daily fetch, Search Console, a stale research note). The Codex review that produced them is outside the repo.
+
 ## Known gaps
 
-- Fetchers overwrite their own files but never delete listings that have gone from the agency site.
 - Thomas Michael and Base give only "EC2Y" as the postcode. Thomas Michael floorplans are PDFs, so they are not shown.
-
 - Weak lead photos on some blocks (Ben Jonson's is a bus stop). Six Commons photos don't name the block in the file title, so check by eye.
 - The Postern has no service-charge PDF at the usual URL; Wallside's PDF didn't parse.
 - One sold listing has no block (address is just "Barbican").
